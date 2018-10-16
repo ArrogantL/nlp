@@ -1,4 +1,6 @@
 from Dict import *
+
+
 def list2HashList(wordlist):
     hashList = [None] * len(wordlist) * 2
     l = len(hashList)
@@ -10,12 +12,16 @@ def list2HashList(wordlist):
                 hashList[index] = word
                 break
     return hashList
+
+
 def getHashCode(words):
     s = 17
 
     for c in words:
         s = 31 * s + ord(c)
     return s
+
+
 def findWordInHashList(hashList, word):
     hash = getHashCode(word)
     l = len(hashList)
@@ -27,6 +33,8 @@ def findWordInHashList(hashList, word):
         elif c == None:
             return False
     return False
+
+
 def findWordInDict(dict, word):
     """
     在字典中查找单词-顺序查找法
@@ -39,6 +47,8 @@ def findWordInDict(dict, word):
         if entry[0] == word:
             return True
     return False
+
+
 def FMM(dict, str):
     """
     最大正向匹配
@@ -66,8 +76,6 @@ def FMM(dict, str):
             if j == i or findWordInHashList(hashlist, word) or word == "\n":
                 i = j + 1
                 break
-        if word == "\n":
-            continue
         seg.append(word)
     return seg
 
@@ -87,41 +95,162 @@ def BMM(dict, str):
     j = len(str) - 1
     hashlist = list2HashList([c[0] for c in dict])
     while j >= 0:
-        if j +1- maxWordLength>=0:
-            r = range(j +1- maxWordLength, j + 1)
+        if j + 1 - maxWordLength >= 0:
+            r = range(j + 1 - maxWordLength, j + 1)
         else:
             r = range(0, j + 1)
 
         for i in r:
             word = str[i:j + 1]
             if j == i or findWordInHashList(hashlist, word) or word == "\n":
-                j=i-1
+                j = i - 1
                 break
-        if word=="\n":
-            continue
         seg.append(word)
     seg.reverse()
     return seg
 
 
+
+def analyzeMM(seg_corpus, seg_MM):
+    """
+    正常检测模式：每次字符相同，如果是空格就+1分。开始新的匹配。如果出现不同字符进入重定位异步匹配。
+    重定位异步匹配：是空格的一方继续后移动到不是空格，检测字符是否相等，不等就说明测试文件不对，报错。无错误就进入重定位同步匹配过程。
+    重定位同步匹配：每次字符相同，如果是空格就进入正常检测模式，但是不加分。如果出现不同，则进入重定位异步匹配。
+    :param seg_corpus:
+    :param seg_MM:
+    :return:
+    """
+    # "doc/199801_seg_normalized.txt"
+    fcorpus = open(seg_corpus, "r+")
+    fMM = open(seg_MM, "r+")
+    TP = 0
+    Tall=0
+    Pall=0
+    while True:
+        lc = fcorpus.readline()
+        lm = fMM.readline()
+        if lc == '' or lm == '':
+            break
+        len_lc = len(lc)
+        len_lm = len(lm)
+
+        c=0
+        m=0
+        while True:
+            if c==len_lc:
+                break
+            if lc[c]==' ':
+                Tall+=1
+            c+=1
+        while True:
+            if m ==len_lm:
+                break
+            if lm[m]==' ':
+                Pall+=1
+            m+=1
+
+
+
+        i = 0
+        j = 0
+        flag = 0
+
+
+
+        while True:
+            if i == len_lc or j == len_lm:
+                break
+            if flag == 0:
+                if lc[i] != lm[j]:
+                    flag = 1
+                    continue
+                if lc[i] == " ":
+                    TP += 1
+                if i + 1 == len_lc and j + 1 == len_lm:
+                    TP += 1
+                i += 1
+                j += 1
+            elif flag == 1:
+                if lc[i] == " ":
+                    i += 1
+                else:
+                    j += 1
+                assert lc[i] == lm[j]
+                flag = 2
+            else:
+                if lc[i] != lm[j]:
+                    flag = 1
+                    continue
+                if lc[i] == " ":
+                    flag = 0
+                i += 1
+                j += 1
+
+
+    # 关闭打开的文件
+    fcorpus.close()
+    fMM.close()
+
+
+    return TP,Tall,Pall
+def testAnalyze():
+    TP = 0
+
+    lc = "as d fg hj kl"
+    lm = "as d fg hjkl"
+
+    i = 0
+    j = 0
+    flag = 0
+    len_lc = len(lc)
+    len_lm = len(lm)
+    while True:
+        if i == len_lc or j == len_lm:
+
+            break
+        if flag == 0:
+            if lc[i] != lm[j]:
+                flag = 1
+                continue
+            if lc[i] == " " :
+                TP += 1
+            if (i+1==len_lc or lc[i+1]==" ") and (j+1==len_lm or lm[j+1]==" "):
+                TP+=1
+            i += 1
+            j += 1
+        elif flag == 1:
+            if lc[i] == " ":
+                i += 1
+            else:
+                j += 1
+            assert lc[i] == lm[j]
+            flag = 2
+        else:
+            if lc[i] != lm[j]:
+                flag = 1
+                continue
+            if lc[i] == " ":
+                flag = 0
+            i += 1
+            j += 1
+        print(TP)
+    print(TP)
+
 if __name__ == '__main__':
     dict = readDict("doc/dic.txt")
-    testr = """
-AlphaGo之父亲授深度强化学习十大法则
-"""
+    testr = """"""
     segFMM = FMM(dict, testr)
     segBMM = BMM(dict, testr)
-    for word in segFMM:
-        if word == "。":
-            print(word)
-        else:
-            print(word,end=" ")
-    print("\n")
+    #TP, Tall, Pall=analyzeMM("doc/199801_seg_normalized.txt","doc/seg_BMM.txt")
+    #print(TP,Tall,Pall)
 
-    for word in segBMM:
-        if word == "。":
-            print(word)
-        else:
-            print(word,end=" ")
+    with open("doc/seg_BMM.txt", 'w') as f:
+        for word in segBMM:
+            if word=="\n":
+                #f.write(word)
+                print(word)
+            else:
+                #f.write(word+" ")
+                print(word+" ")
 
 

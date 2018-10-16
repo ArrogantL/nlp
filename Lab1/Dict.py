@@ -10,20 +10,29 @@ def getDict(filename, encoding='GB18030'):
     """
     fo = open(filename, "r+", encoding=encoding)
     dict = {}
+    #list=[]
     while True:
         line = fo.readline()
         if line == '':
             break
         # ^.*?/m| |/[a-zA-Z\]]+
-        words = re.split("^.*?/m +|/[a-zA-Z\]]+ +|\n|\[[^/]", line)
-
+        words = re.split("^.*?/m +|/[a-zA-Z\]]+ *|\[[^/]", line)
         for word in words:
+            #list.append(word)
             if word == '':
                 continue
             dict.setdefault(word, 1)
             dict[word] += 1
     # 关闭打开的文件
     fo.close()
+    """
+    with open("doc/199801_seg_normalized.txt", 'w') as f:
+        for word in list:
+            if word == "\n" or word=='':
+                f.write(word)
+            else:
+                f.write(word + " ")
+"""
     return sorted(dict.items(), key=lambda item: item[1], reverse=True)
 
 
@@ -46,8 +55,8 @@ def readDict(filename, encoding='UTF-8'):
         line = fo.readline()
         if line == '':
             break
-        words = re.split(" +|\n",line)
-        dict.append((words[0],words[1]))
+        words = re.split(" +|\n", line)
+        dict.append((words[0], words[1]))
     # 关闭打开的文件
     fo.close()
     return dict
@@ -68,10 +77,9 @@ def analyzeDict(dict):
 
 
 if __name__ == '__main__':
-    #dict = getDict("doc/199801_seg.txt")
-    # saveDict(dict, "doc/dic.txt")
+    dict = getDict("doc/199801_seg.txt")
+    #saveDict(dict, "doc/dic.txt")
     #analyzeResult = analyzeDict(dict)
     #print(analyzeResult)
-    dict=readDict("doc/dic.txt")
-    print(dict)
-
+    # dict=readDict("doc/dic.txt")
+    # print(dict)
