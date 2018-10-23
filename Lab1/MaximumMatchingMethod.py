@@ -1,5 +1,5 @@
 from Dict import *
-
+import time
 
 def list2HashList(wordlist):
     hashList = [None] * len(wordlist) * 2
@@ -16,7 +16,6 @@ def list2HashList(wordlist):
 
 def getHashCode(words):
     s = 17
-
     for c in words:
         s = 31 * s + ord(c)
     return s
@@ -57,9 +56,16 @@ def FMM(dict, str):
     :return: 分词结果list
     """
     maxWordLength = 0
+
+
+
     for word in dict:
-        if len(word) > maxWordLength:
-            maxWordLength = len(word)
+
+        if len(word[0]) > maxWordLength:
+            maxWordLength = len(word[0])
+    lenlist=[0] * (maxWordLength+1)
+    for word in dict:
+        lenlist[len(word[0])]=1
     seg = []
     i = 0
     hashlist = list2HashList([c[0] for c in dict])
@@ -72,11 +78,17 @@ def FMM(dict, str):
             r = range(i, i + maxWordLength)
         for j in r[::-1]:
             word = str[i:j + 1]
+
+            if lenlist[len(word)]==0:
+                continue
+
             # b = findWordInDict(dict, word)
             if j == i or findWordInHashList(hashlist, word) or word == "\n":
                 i = j + 1
                 break
         seg.append(word)
+
+
     return seg
 
 
@@ -89,8 +101,8 @@ def BMM(dict, str):
     """
     maxWordLength = 0
     for word in dict:
-        if len(word) > maxWordLength:
-            maxWordLength = len(word)
+        if len(word[0]) > maxWordLength:
+            maxWordLength = len(word[0])
     seg = []
     j = len(str) - 1
     hashlist = list2HashList([c[0] for c in dict])
@@ -236,21 +248,30 @@ def testAnalyze():
         print(TP)
     print(TP)
 
+
+
 if __name__ == '__main__':
     dict = readDict("doc/dic.txt")
-    testr = """"""
-    segFMM = FMM(dict, testr)
-    segBMM = BMM(dict, testr)
+    testr = """
+"""
+
+    #start = time.time()
+    #segFMM = FMM(dict, testr)
+
+    #segBMM = BMM(dict, testr)
+    #print(time.time()-start)
     #TP, Tall, Pall=analyzeMM("doc/199801_seg_normalized.txt","doc/seg_BMM.txt")
-    #print(TP,Tall,Pall)
+    #TP, Tall, Pall=analyzeMM("doc/seg_test.txt","doc/seg_BMM_test.txt")
+    #print(TP,TP/Tall,TP/Pall)
 
-    with open("doc/seg_BMM.txt", 'w') as f:
-        for word in segBMM:
+
+"""
+    with open("doc/seg_FMM.txt", 'w') as f:
+        for word in segFMM:
             if word=="\n":
-                #f.write(word)
-                print(word)
-            else:
-                #f.write(word+" ")
-                print(word+" ")
+                f.write(word)
 
+            else:
+                f.write(word+" ")
+"""
 
