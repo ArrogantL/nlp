@@ -261,8 +261,8 @@ if __name__ == '__main__':
     #segBMM = BMM(dict, testr)
     #print(time.time()-start)
     #TP, Tall, Pall=analyzeMM("doc/199801_seg_normalized.txt","doc/seg_BMM.txt")
-    #TP, Tall, Pall=analyzeMM("doc/seg_test.txt","doc/seg_BMM_test.txt")
-    #print(TP,TP/Tall,TP/Pall)
+    TP, Tall, Pall=analyzeMM("doc/199801_seg_normalized.txt","doc/seg_FMM.txt")
+    print(TP,TP/Tall,TP/Pall)
 
 
 """
