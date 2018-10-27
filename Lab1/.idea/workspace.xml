@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/BiGramModel.py" description="dict[firstWord][word]+=1" line="36" />
+    <bookmark url="file://$PROJECT_DIR$/BiGramModel.py" description="dict[firstWord][word]+=1" line="35" />
+    <bookmark url="file://$PROJECT_DIR$/MaximumMatchingMethod.py" description="i = 0" line="21" />
+    <bookmark url="file://$PROJECT_DIR$/MaximumMatchingMethod.py" description="while i &lt; len(str):" line="23" />
+    <bookmark url="file://$PROJECT_DIR$/MaximumMatchingMethod.py" description="if i + maxWordLength &gt;= len(str):" line="24" />
+    <bookmark url="file://$PROJECT_DIR$/MaximumMatchingMethod.py" description="r = range(i, len(str))" line="25" />
+    <bookmark url="file://$PROJECT_DIR$/MaximumMatchingMethod.py" description="r = range(i, i + maxWordLength)" line="27" />
+    <bookmark url="file://$PROJECT_DIR$/MaximumMatchingMethod.py" description="for j in r[::-1]:" line="28" />
+    <bookmark url="file://$PROJECT_DIR$/MaximumMatchingMethod.py" description="i = j + 1" line="33" />
+    <bookmark url="file://$PROJECT_DIR$/MaximumMatchingMethod.py" description="FN=len(corpusseg)-TP" line="122" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89fff5f4-8c2d-4868-b96e-d25680fa30a3" name="Default Changelist" comment="">
+    <list default="true" id="89fff5f4-8c2d-4868-b96e-d25680fa30a3" name="Default Changelist" comment="完成Unigram bigram">
+      <change afterPath="$PROJECT_DIR$/UniGramModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/seg_UniGram.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BiGramModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/BiGramModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MaximumMatchingMethod.py" beforeDir="false" afterPath="$PROJECT_DIR$/MaximumMatchingMethod.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/分词数据第一批/corpus_Guideline/Guideline.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/分词数据第一批/corpus_Guideline/Guideline_appendix.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/分词数据第一批/corpus_Guideline/Guideline_contents.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/分词数据第一批/corpus_Guideline/Guideline_cover.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/199801_seg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/doc/199801_seg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/199801_seg_normalized.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/199801_sent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/doc/199801_sent.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/199801_sent_fromseg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/dic.txt" beforeDir="false" afterPath="$PROJECT_DIR$/doc/dic.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/seg_BMM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/doc/seg_BMM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/seg_BMM_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/seg_BiGram.txt" beforeDir="false" afterPath="$PROJECT_DIR$/doc/seg_BiGram.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/seg_FMM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/doc/seg_FMM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/seg_test.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,17 +40,19 @@
     <session id="-1626870024">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.27" value="2" />
-          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.30" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -42,53 +60,64 @@
           <entry key="README" value="2" />
           <entry key="mydict" value="1" />
           <entry key="mytest" value="1" />
-          <entry key="py" value="17" />
+          <entry key="py" value="38" />
           <entry key="pyi" value="2" />
-          <entry key="txt" value="53" />
+          <entry key="txt" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="57" />
-          <entry key="Python" value="17" />
+          <entry key="PLAIN_TEXT" value="92" />
+          <entry key="Python" value="38" />
           <entry key="PythonStub" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="28" />
-          <entry key="dummy" value="5" />
+          <entry key="dummy" value="10" />
           <entry key="mytest" value="4" />
-          <entry key="py" value="8305" />
-          <entry key="txt" value="23" />
+          <entry key="py" value="11181" />
+          <entry key="txt" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="32" />
-          <entry key="Python" value="8333" />
+          <entry key="PLAIN_TEXT" value="78" />
+          <entry key="Python" value="11209" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.9">
+    <splitter split-orientation="horizontal" split-proportion="0.6530343">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/doc/199801_sent.txt">
+            <entry file="file://$PROJECT_DIR$/UniGramModel.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="213">
-                  <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+                <state relative-caret-position="137">
+                  <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                    <marker date="1540647411922" expanded="true" signature="1234:1337" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/doc/199801_sent_fromseg.txt">
+            <entry file="file://$PROJECT_DIR$/BiGramModel.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="2234" column="9" selection-end-line="23032" />
+                <state relative-caret-position="233">
+                  <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+                  <folding>
+                    <element signature="e#100#1165#0" />
+                    <element signature="e#1194#1496#0" />
+                    <element signature="e#1528#1995#0" />
+                    <element signature="e#2029#2566#0" />
+                    <marker date="1540647392052" expanded="true" signature="4266:4267" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -96,81 +125,32 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/MaximumMatchingMethod.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="282">
-                  <caret line="263" column="4" lean-forward="true" selection-start-line="263" selection-start-column="4" selection-end-line="263" selection-end-column="4" />
+                <state relative-caret-position="321">
+                  <caret line="124" column="40" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="40" />
                   <folding>
-                    <element signature="e#2722#4526#0" />
-                    <marker date="1540613997295" expanded="true" signature="392:754" ph="..." />
-                    <marker date="1540613997295" expanded="true" signature="506:754" ph="..." />
-                    <marker date="1540613997295" expanded="true" signature="4545:5445" ph="..." />
+                    <element signature="e#0#18#0" expanded="true" />
+                    <marker date="1540647500493" expanded="true" signature="3366:3367" ph="..." />
                   </folding>
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/README">
-              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/BiGramModel.py">
+            <entry file="file://$PROJECT_DIR$/HashList.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="212">
-                  <caret line="23218" column="14" lean-forward="true" selection-start-line="23218" selection-start-column="14" selection-end-line="23218" selection-end-column="14" />
+                <state relative-caret-position="155">
+                  <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/AnalyzeSeg.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="387">
+                  <caret line="186" column="58" selection-start-line="186" selection-start-column="58" selection-end-line="186" selection-end-column="58" />
                   <folding>
-                    <marker date="1540614073133" expanded="true" signature="104:1132" ph="..." />
-                    <marker date="1540614073133" expanded="true" signature="1859499:1859683" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/doc/seg_BiGram.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-506368" />
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="44">
-                  <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/doc/199801_seg_normalized.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-506162">
-                  <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/doc/199801_seg.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="6" column="325" selection-start-line="6" selection-start-column="321" selection-end-line="6" selection-end-column="325" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Dict.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="274">
-                  <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#0#9#0" expanded="true" />
-                    <marker date="1539688709759" expanded="true" signature="201:202" ph="..." />
-                    <marker date="1539688709759" expanded="true" signature="1284:1561" ph="..." />
-                    <marker date="1539688709759" expanded="true" signature="1585:1815" ph="..." />
-                    <marker date="1539688709759" expanded="true" signature="1814:1815" ph="..." />
+                    <element signature="e#0#18#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -179,12 +159,20 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/doc/seg_BMM_test.txt">
+            <entry file="file://$PROJECT_DIR$/UniGramModel.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="3" column="6" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="6" />
+                <state relative-caret-position="277">
+                  <caret line="108" selection-start-line="108" selection-end-line="108" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                    <element signature="e#120#635#0" />
+                    <element signature="e#671#1208#0" />
+                    <element signature="e#1239#1336#0" />
+                    <element signature="e#1390#2116#0" />
+                    <marker date="1540647411922" expanded="true" signature="1234:1337" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -227,6 +215,11 @@
       <find>^\n</find>
       <find>getBigramDict</find>
       <find>dict</find>
+      <find>高兴</find>
+      <find>中央</find>
+      <find>广播</find>
+      <find>^.*?/m +|/[a-zA-Z\]]+ *|\[[^/]</find>
+      <find>^.*?/m +</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -237,23 +230,27 @@
       <list>
         <option value="$PROJECT_DIR$/doc/分词数据第一批/mytest" />
         <option value="$PROJECT_DIR$/doc/mytest" />
-        <option value="$PROJECT_DIR$/doc/199801_seg.txt" />
+        <option value="$PROJECT_DIR$/TwoGramModel.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/doc/199801_sent.txt" />
         <option value="$PROJECT_DIR$/doc/seg_BMM_test.txt" />
         <option value="$PROJECT_DIR$/doc/seg_test.txt" />
-        <option value="$PROJECT_DIR$/doc/199801_seg_normalized.txt" />
-        <option value="$PROJECT_DIR$/Dict.py" />
-        <option value="$PROJECT_DIR$/TwoGramModel.py" />
+        <option value="$PROJECT_DIR$/doc/199801_seg.txt" />
         <option value="$PROJECT_DIR$/doc/dic.txt" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/MaximumMatchingMethod.py" />
+        <option value="$PROJECT_DIR$/Dict.py" />
+        <option value="$PROJECT_DIR$/doc/199801_seg_normalized.txt" />
+        <option value="$PROJECT_DIR$/HashList.py" />
+        <option value="$PROJECT_DIR$/AnalyzeSeg.py" />
         <option value="$PROJECT_DIR$/BiGramModel.py" />
+        <option value="$PROJECT_DIR$/UniGramModel.py" />
+        <option value="$PROJECT_DIR$/MaximumMatchingMethod.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="985" />
     <option name="y" value="27" />
-    <option name="width" value="935" />
+    <option name="width" value="925" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -393,6 +390,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="UniGramModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Lab1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UniGramModel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Lab1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -419,13 +437,15 @@
       <item itemvalue="Python.test" />
       <item itemvalue="Python.MaximumMatchingMethod" />
       <item itemvalue="Python.BiGramModel" />
+      <item itemvalue="Python.UniGramModel" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.BiGramModel" />
         <item itemvalue="Python.MaximumMatchingMethod" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.UniGramModel" />
         <item itemvalue="Python.Dict" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -442,7 +462,7 @@
     </task>
     <servers />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -455,7 +475,7 @@
     <frame x="51" y="27" width="1869" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.18004338" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.1778742" />
       <window_info id="Structure" order="1" sideWeight="0.50163937" side_tool="true" weight="0.14673913" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -477,44 +497,53 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完成Unigram bigram" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成Unigram bigram" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Dict.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/BiGramModel.py</url>
+          <line>133</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UniGramModel.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MaximumMatchingMethod.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MaximumMatchingMethod.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="10" />
+          <line>122</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/BiGramModel.py</url>
-          <line>148</line>
-          <option name="timeStamp" value="19" />
+          <line>119</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/UniGramModel.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="targetseg" />
+        <watch expression="corpusseg" />
+        <watch expression="j" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/lib/python3.7/typing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
           <caret line="1499" column="8" selection-start-line="1499" selection-start-column="8" selection-end-line="1499" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.7/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="323" selection-start-line="323" selection-end-line="323" />
         </state>
       </provider>
     </entry>
@@ -542,42 +571,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/seg_test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/seg_FMM.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/3.5之前文档备份/199801_seg.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/seg_BMM.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/dic.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/seg_BMM_test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/199801_seg.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="325" selection-start-line="6" selection-start-column="321" selection-end-line="6" selection-end-column="325" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1247971762/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -589,27 +587,6 @@
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1539688709759" expanded="true" signature="201:202" ph="..." />
-            <marker date="1539688709759" expanded="true" signature="1284:1561" ph="..." />
-            <marker date="1539688709759" expanded="true" signature="1585:1815" ph="..." />
-            <marker date="1539688709759" expanded="true" signature="1814:1815" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/199801_sent.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -617,46 +594,163 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/199801_sent_fromseg.txt">
+    <entry file="file://$PROJECT_DIR$/doc/seg_BMM.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="2234" column="9" selection-end-line="23032" />
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/seg_FMM_2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/seg_BMM_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/sss.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="506">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/seg_BMM_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="43" column="247" selection-start-line="43" selection-start-column="245" selection-end-line="43" selection-end-column="247" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/199801_sent_fromseg.txt" />
+    <entry file="file://$PROJECT_DIR$/doc/199801_seg.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-end-line="23033" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/dic.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1540643602565" expanded="true" signature="201:202" ph="..." />
+            <marker date="1540643602565" expanded="true" signature="1072:1349" ph="..." />
+            <marker date="1540643602565" expanded="true" signature="1373:1603" ph="..." />
+            <marker date="1540643602565" expanded="true" signature="1602:1603" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="321" selection-start-line="321" selection-end-line="321" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/199801_sent.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="21" selection-start-line="12" selection-start-column="18" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/seg_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/199801_seg_normalized.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/seg_UniGram.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/seg_BiGram.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506368" />
+        <state relative-caret-position="132">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/199801_seg_normalized.txt">
+    <entry file="file://$PROJECT_DIR$/AnalyzeSeg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506162">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="387">
+          <caret line="186" column="58" selection-start-line="186" selection-start-column="58" selection-end-line="186" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MaximumMatchingMethod.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="263" column="4" lean-forward="true" selection-start-line="263" selection-start-column="4" selection-end-line="263" selection-end-column="4" />
+        <state relative-caret-position="321">
+          <caret line="124" column="40" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="40" />
           <folding>
-            <element signature="e#2722#4526#0" />
-            <marker date="1540613997295" expanded="true" signature="392:754" ph="..." />
-            <marker date="1540613997295" expanded="true" signature="506:754" ph="..." />
-            <marker date="1540613997295" expanded="true" signature="4545:5445" ph="..." />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1540647500493" expanded="true" signature="3366:3367" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UniGramModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1540647411922" expanded="true" signature="1234:1337" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BiGramModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="23218" column="14" lean-forward="true" selection-start-line="23218" selection-start-column="14" selection-end-line="23218" selection-end-column="14" />
+        <state relative-caret-position="233">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
           <folding>
-            <marker date="1540614073133" expanded="true" signature="104:1132" ph="..." />
-            <marker date="1540614073133" expanded="true" signature="1859499:1859683" ph="..." />
+            <element signature="e#100#1165#0" />
+            <element signature="e#1194#1496#0" />
+            <element signature="e#1528#1995#0" />
+            <element signature="e#2029#2566#0" />
+            <marker date="1540647392052" expanded="true" signature="4266:4267" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HashList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>

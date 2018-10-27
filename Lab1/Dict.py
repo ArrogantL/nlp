@@ -16,23 +16,15 @@ def getDict(filename, encoding='GB18030'):
         if line == '':
             break
         # ^.*?/m| |/[a-zA-Z\]]+
-        words = re.split("^.*?/m +|/[a-zA-Z\]]+ *|\[[^/]", line)
+        words = re.split("^.*?/m +|/[a-zA-Z\]]+ *|\[", line)
         for word in words:
             #list.append(word)
-            if word == '':
+            if word == ''or word=='\n':
                 continue
             dict.setdefault(word, 1)
             dict[word] += 1
     # 关闭打开的文件
     fo.close()
-    """
-    with open("doc/199801_seg_normalized.txt", 'w') as f:
-        for word in list:
-            if word == "\n" or word=='':
-                f.write(word)
-            else:
-                f.write(word + " ")
-"""
     return sorted(dict.items(), key=lambda item: item[1], reverse=True)
 
 
@@ -78,8 +70,9 @@ def analyzeDict(dict):
 
 if __name__ == '__main__':
     dict = getDict("doc/199801_seg.txt")
-    #saveDict(dict, "doc/dic.txt")
-    #analyzeResult = analyzeDict(dict)
-    #print(analyzeResult)
-    # dict=readDict("doc/dic.txt")
-    # print(dict)
+    saveDict(dict, "doc/dic.txt")
+    analyzeResult = analyzeDict(dict)
+    print(analyzeResult)
+    dict=readDict("doc/dic.txt")
+    print(dict)
+
