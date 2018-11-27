@@ -13,7 +13,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89fff5f4-8c2d-4868-b96e-d25680fa30a3" name="Default Changelist" comment="完成Unigram bigram">
+      <change afterPath="$PROJECT_DIR$/../Lab3/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3/ME_external.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3/data/gameLocation.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3/data/testfile_path.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3/data/trainfile_path.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/ME.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/ME.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +35,7 @@
         <counts>
           <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -40,7 +49,7 @@
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -82,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UniGramModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="70" column="117" selection-start-line="70" selection-start-column="117" selection-end-line="70" selection-end-column="117" />
+            <state relative-caret-position="427">
+              <caret line="99" column="17" selection-start-line="92" selection-start-column="4" selection-end-line="99" selection-end-column="17" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <marker date="1540647411922" expanded="true" signature="1234:1337" ph="..." />
@@ -230,10 +239,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="985" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="51" />
     <option name="y" value="27" />
-    <option name="width" value="925" />
+    <option name="width" value="935" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -258,6 +267,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,7 +284,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,7 +464,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="27" width="1869" height="1053" extended-state="6" />
+    <frame x="51" y="27" width="1869" height="1053" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.1778742" />
@@ -642,8 +651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UniGramModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="70" column="117" selection-start-line="70" selection-start-column="117" selection-end-line="70" selection-end-column="117" />
+        <state relative-caret-position="427">
+          <caret line="99" column="17" selection-start-line="92" selection-start-column="4" selection-end-line="99" selection-end-column="17" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <marker date="1540647411922" expanded="true" signature="1234:1337" ph="..." />

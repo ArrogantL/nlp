@@ -1,3 +1,7 @@
+from ME_external import *
+def process(line):
+    return None
+
 def get_features(trainfile_path,featuresfile_path):
     """
     get feature.txt with trainfile
@@ -5,10 +9,14 @@ def get_features(trainfile_path,featuresfile_path):
     :param featuresfile_path:
     :return:
     """
-    pass
-
-
-
+    trainfile = open(trainfile_path, "r+", encoding="GB18030")
+    featuresfile = open(featuresfile_path, "w", encoding="GB18030")
+    while True:
+        line = trainfile.readline()
+        if line == '':
+            break
+        features=process(line)
+        featuresfile.write(features+'\n')
 
 def train_ME(featuresfile_path,ME_model_path):
     """
@@ -17,11 +25,16 @@ def train_ME(featuresfile_path,ME_model_path):
     :param ME_model_path:
     :return:
     """
-    pass
+    mxEnt = maxEntropy()
+    # TODO
+    mxEnt.loadData('data/gameLocation.dat')
+
+    mxEnt.train()
+    print(mxEnt.predict('Sunny'))
 
 
 
-def getResult(testfile_path,ME_model_path,test_feature_path,result_path):
+def getPredict(testfile_path,ME_model_path,test_feature_path,result_path):
     """
     get test_feature.txt result.txt with model.txt and testfile
     :param testfile_path:
