@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="586e7e2a-9d30-4f7d-bb99-6eae34a62ca1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/199801_seg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/199801_sent.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/3.5之前文档备份/199801_seg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/3.5之前文档备份/199801_seg_normalized.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/3.5之前文档备份/199801_sent.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/3.5之前文档备份/199801_sent_fromseg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/3.5之前文档备份/dic.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/3.5之前文档备份/seg_BMM.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/3.5之前文档备份/seg_BMM_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/3.5之前文档备份/seg_FMM.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/3.5之前文档备份/seg_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/dic.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/score.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/seg_BMM.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/seg_BiGram.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/seg_FMM.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/seg_UniGram.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/timeCost.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1/doc/分词实验要求（初稿）0920.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/ME_external.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab3/ME_external.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/data/result_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab3/data/result_path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/data/standard_answer_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab3/data/standard_answer_path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/data/test_feature_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab3/data/test_feature_path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/data/testfile_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab3/data/testfile_path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtest/Genia4EReval1.iob2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtest/Genia4EReval1.raw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtest/Genia4EReval2.iob2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtest/Genia4EReval2.raw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtest/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtest/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtraining/Genia4ERtask1.iob2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtraining/Genia4ERtask2.iob2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtraining/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtraining/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtraining/evalIOB2.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtraining/sampletest1.iob2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtraining/sampletest1.raw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtraining/sampletest2.iob2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/Genia4ERtraining/sampletest2.raw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/JNLPBA2004_eval/1978-1989.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/JNLPBA2004_eval/1990-1999.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/JNLPBA2004_eval/2000-2001.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/JNLPBA2004_eval/Genia4EReval.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/JNLPBA2004_eval/ReadMe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/JNLPBA2004_eval/S1998-2001.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/JNLPBA2004_eval/SharedTaskEval.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab3/doc/JNLPBA2004_eval/evalIOB2.pl" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-592839123">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="README" value="1" />
+          <entry key="py" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="README" value="48" />
+          <entry key="py" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="48" />
+          <entry key="Python" value="5" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnalyzeSeg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HashList.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" column="15" selection-start-line="6" selection-end-line="16" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MaximumMatchingMethod.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>doc</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>data</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MaximumMatchingMethod.py" />
+        <option value="$PROJECT_DIR$/AnalyzeSeg.py" />
+        <option value="$PROJECT_DIR$/Dict.py" />
+        <option value="$PROJECT_DIR$/HashList.py" />
+        <option value="$PROJECT_DIR$/README" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="985" />
+    <option name="y" value="27" />
+    <option name="width" value="935" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Lab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab1" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab1" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.MaximumMatchingMethod">
+    <configuration name="Dict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Lab1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MaximumMatchingMethod" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Lab1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MaximumMatchingMethod.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Dict" />
+      <item itemvalue="Python.MaximumMatchingMethod" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.MaximumMatchingMethod" />
+        <item itemvalue="Python.Dict" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="586e7e2a-9d30-4f7d-bb99-6eae34a62ca1" name="Default Changelist" comment="" />
+      <created>1543371321524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543371321524</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="985" y="27" width="935" height="1053" extended-state="4" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5065934" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/BiGramModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HashList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnalyzeSeg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MaximumMatchingMethod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="15" selection-start-line="6" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

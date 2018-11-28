@@ -195,9 +195,10 @@ class maxEntropy(object):
             line2=testfile.readline()
             if line == '':
                 break
+            if line=='\n':
+                continue
             prop=mxEnt.predict(line)
             result_file.write(line2[:-1]+' '+prop[0][1]+'\n')
-            print(line2[:-1]+' '+prop[0][1])
         test_feature_file.close()
         result_file.close()
 
@@ -209,14 +210,31 @@ class maxEntropy(object):
         :param evaluation_result_path:
         :return:
         """
-
-        pass
-
-    # def read_features_file(self,featuresfile_path):
-    #     return features
-    #
-    # def read_ME_model(self,ME_model_path):
-    #     return ME_model
+        standard_answer_file=open(standard_answer_path,"r+",encoding="GB18030")
+        result_file=open(result_path,"r+",encoding="GB18030")
+        sum=0
+        TP=0
+        while True:
+            line = standard_answer_file.readline()
+            line2=result_file.readline()
+            if line == '':
+                break
+            while line=='\n':
+                line = standard_answer_file.readline()
+            fields1 = line.strip().split()
+            fields2 = line2.strip().split()
+            assert fields1[0]==fields2[0]
+            label1=fields1[1]
+            label2=fields2[1]
+            if label1==label2 and label1=='O':
+                continue
+            print(fields1[0],label1,label2)
+            sum+=1
+            if label1==label2:
+                TP+=1
+        print(TP,sum,TP/sum)
+        standard_answer_file.close()
+        result_file.close()
 
 if __name__ == '__main__':
     # mxEnt = maxEntropy()
@@ -230,8 +248,9 @@ if __name__ == '__main__':
     testfile_path="data/testfile_path.txt"
     test_feature_path="data/test_feature_path.txt"
     result_path="data/result_path.txt"
-
+    standard_answer_path="data/standard_answer_path.txt"
     mxEnt=maxEntropy()
     # mxEnt.get_features(trainfile_path,featuresfile_path)
     # mxEnt.train_ME(featuresfile_path,ME_model_path)
     mxEnt.getPredict(testfile_path,ME_model_path, test_feature_path, result_path)
+    mxEnt.evaluate(standard_answer_path, result_path, "")
