@@ -8,6 +8,7 @@ class maxEntropy(object):
         self.features = defaultdict(int)  # 用于获得(标签，特征)键值对
         self.labels = set([])  # 标签
         self.w = []
+
     def loadData(self, fName):
         for line in open(fName):
             fields = line.strip().split()
@@ -34,6 +35,7 @@ class maxEntropy(object):
                 self.w[i] += (1.0 / self.M) * np.log(self.Ep_[i] / self.ep[i])
             if self.convergence():
                 break
+
     def initP(self):
         # 获得M
         self.M = max([len(feature[1:]) for feature in self.trainset])
@@ -91,30 +93,51 @@ class maxEntropy(object):
 
         return prob
 
+    keywords = ["glucocorticoid", "NF-kappaB", "NF-kappa", "transcription", "IL-2", "nuclear", "IL-4", "GR", "factor",
+                "receptor", "protein", "receptors", "(", ")", "B", "and", "kinase", "factors", "proteins", "alpha",
+                "transcription", "binding", "T", "human", "B", "lymphocytes", "cells", "T", "lymphocytes", "(", ")",
+                "cell", "and", "+", "blood", "B", "gene", "promoter", "genes", "site", "and", "(", ")", "cells", "cell",
+                "lines", "line", "mRNA"]
 
-
-
-
-
-
-    def process(self,line,is_train):
+    def process(self, line, lastline, is_train):
         fields = line.strip().split()
-
-        if len(fields)==0:
+        lastfields = lastline.strip().split()
+        # TODO 唯一改动，设计特征模板
+        # 空行
+        if len(fields) == 0:
             return ''
-
+        # 2-gram
         word = fields[0]
+        s = str(len(word))
+        if word in self.keywords:
+            s += ' ' + word
+        if '-' in word:
+            s += ' ' + '-'
+        if word.isupper():
+            s += ' ' + "upper"
+        if any(char.isdigit() for char in word):
+            s += ' ' + "has_digit"
+        if not len(lastfields) == 0:
+            lastword = lastfields[0]
+            if lastword in self.keywords:
+                s += " last" + lastword
 
-        if len(fields)==1 and not is_train:
-            return str(len(word))
-        elif len(fields)==2:
-            label=fields[1]
-            return label + ' ' + str(len(word))
-        else:
-            assert False
 
+        # 以下代码不用更改
+        # 测试
+        if len(fields) == 1 and not is_train:
+            return s
 
-    def get_features(self,trainfile_path, featuresfile_path,is_train=True):
+        # 训练
+        if len(fields) == 2:
+            label = fields[1]
+            s = label + ' ' + s
+            return s
+
+        # 错误
+        assert False
+
+    def get_features(self, trainfile_path, featuresfile_path, is_train=True):
         """
         get feature.txt with trainfile
         :param trainfile_path:
@@ -123,17 +146,19 @@ class maxEntropy(object):
         """
         trainfile = open(trainfile_path, "r+", encoding="GB18030")
         featuresfile = open(featuresfile_path, "w", encoding="GB18030")
+        lastline = ''
         while True:
             line = trainfile.readline()
             if line == '':
                 break
 
-            features = self.process(line,is_train)
+            features = self.process(line, lastline, is_train)
+            lastline = line
             featuresfile.write(features + '\n')
         trainfile.close()
         featuresfile.close()
 
-    def train_ME(self,featuresfile_path, ME_model_path):
+    def train_ME(self, featuresfile_path, ME_model_path):
         """
         get ME_model.txt with feature.txt
         :param featuresfile_path:
@@ -144,17 +169,17 @@ class maxEntropy(object):
         # TODO
         self.loadData(featuresfile_path)
         self.train()
-        ME_model=open(ME_model_path,"w",encoding="GB18030")
+        ME_model = open(ME_model_path, "w", encoding="GB18030")
         # for label in self.labels:
         #     ME_model.write(label+' ')
         # ME_model.write('\n')
-        for label,f in self.features:
-            id=self.features[(label,f)]
-            fw=self.w[id]
-            ME_model.write("%s %s %f\n"%(label,f,fw))
+        for label, f in self.features:
+            id = self.features[(label, f)]
+            fw = self.w[id]
+            ME_model.write("%s %s %f\n" % (label, f, fw))
         ME_model.close()
 
-    def getPredict(self,testfile_path, ME_model_path, test_feature_path, result_path):
+    def getPredict(self, testfile_path, ME_model_path, test_feature_path, result_path):
         """
         get test_feature.txt result.txt with model.txt and testfile
         :param testfile_path:
@@ -164,45 +189,44 @@ class maxEntropy(object):
         :return:
         """
 
-        self.get_features(testfile_path,test_feature_path,is_train=False)
-
+        self.get_features(testfile_path, test_feature_path, is_train=False)
 
         ME_model_file = open(ME_model_path, "r", encoding="GB18030")
         self.features = defaultdict(int)  # 用于获得(标签，特征)键值对
         self.labels = set([])  # 标签
         self.w = []
-        id=0
+        id = 0
         while True:
             line = ME_model_file.readline()
             if line == '':
                 break
             fields = line.strip().split()
-            assert len(fields)==3
+            assert len(fields) == 3
             label = fields[0]
 
-            feature=fields[1]
-            w=fields[2]
-            self.features[(label,feature)]=id
+            feature = fields[1]
+            w = fields[2]
+            self.features[(label, feature)] = id
             self.w.append(w)
             self.labels.add(label)
-            id+=1
+            id += 1
         ME_model_file.close()
         test_feature_file = open(test_feature_path, "r+", encoding="GB18030")
-        testfile=open(testfile_path, "r+", encoding="GB18030")
+        testfile = open(testfile_path, "r+", encoding="GB18030")
         result_file = open(result_path, "w", encoding="GB18030")
         while True:
             line = test_feature_file.readline()
-            line2=testfile.readline()
+            line2 = testfile.readline()
             if line == '':
                 break
-            if line=='\n':
+            if line == '\n':
                 continue
-            prop=mxEnt.predict(line)
-            result_file.write(line2[:-1]+' '+prop[0][1]+'\n')
+            prop = mxEnt.predict(line)
+            result_file.write(line2[:-1] + ' ' + prop[0][1] + '\n')
         test_feature_file.close()
         result_file.close()
 
-    def evaluate(self,standard_answer_path, result_path, evaluation_result_path):
+    def evaluate(self, standard_answer_path, result_path, evaluation_result_path):
         """
         get evaluation_result.txt with standard_answer and result.txt by SharedTaskEval.pl
         :param standard_answer_path:
@@ -210,31 +234,32 @@ class maxEntropy(object):
         :param evaluation_result_path:
         :return:
         """
-        standard_answer_file=open(standard_answer_path,"r+",encoding="GB18030")
-        result_file=open(result_path,"r+",encoding="GB18030")
-        sum=0
-        TP=0
+        standard_answer_file = open(standard_answer_path, "r+", encoding="GB18030")
+        result_file = open(result_path, "r+", encoding="GB18030")
+        sum = 0
+        TP = 0
         while True:
             line = standard_answer_file.readline()
-            line2=result_file.readline()
+            line2 = result_file.readline()
             if line == '':
                 break
-            while line=='\n':
+            while line == '\n':
                 line = standard_answer_file.readline()
             fields1 = line.strip().split()
             fields2 = line2.strip().split()
-            assert fields1[0]==fields2[0]
-            label1=fields1[1]
-            label2=fields2[1]
-            if label1==label2 and label1=='O':
+            assert fields1[0] == fields2[0]
+            label1 = fields1[1]
+            label2 = fields2[1]
+            if label1 == label2 and label1 == 'O':
                 continue
-            print(fields1[0],label1,label2)
-            sum+=1
-            if label1==label2:
-                TP+=1
-        print(TP,sum,TP/sum)
+            print(fields1[0], label1, label2)
+            sum += 1
+            if label1 == label2:
+                TP += 1
+        print(TP, sum, TP / sum)
         standard_answer_file.close()
         result_file.close()
+
 
 if __name__ == '__main__':
     # mxEnt = maxEntropy()
@@ -242,15 +267,19 @@ if __name__ == '__main__':
     # mxEnt.train()
     # print(mxEnt.predict('Sunny Cloudy\n'),mxEnt.predict('Sunny Cloudy\n')[0][1])
 
-    trainfile_path="data/trainfile_path.txt"
-    featuresfile_path="data/featuresfile_path.txt"
-    ME_model_path="data/ME_model_path.txt"
-    testfile_path="data/testfile_path.txt"
-    test_feature_path="data/test_feature_path.txt"
-    result_path="data/result_path.txt"
-    standard_answer_path="data/standard_answer_path.txt"
-    mxEnt=maxEntropy()
-    # mxEnt.get_features(trainfile_path,featuresfile_path)
-    # mxEnt.train_ME(featuresfile_path,ME_model_path)
-    mxEnt.getPredict(testfile_path,ME_model_path, test_feature_path, result_path)
+    trainfile_path = "data/trainfile_path.txt"
+    featuresfile_path = "data/featuresfile_path.txt"
+    ME_model_path = "data/ME_model_path.txt"
+    testfile_path = "data/testfile_path.txt"
+    test_feature_path = "data/test_feature_path.txt"
+    result_path = "data/result_path.txt"
+    standard_answer_path = "data/standard_answer_path.txt"
+    mxEnt = maxEntropy()
+    mxEnt.get_features(trainfile_path, featuresfile_path)
+    print("finish feature")
+    mxEnt.train_ME(featuresfile_path, ME_model_path)
+    print("finish train")
+    mxEnt.getPredict(testfile_path, ME_model_path, test_feature_path, result_path)
+    print("finish predict")
     mxEnt.evaluate(standard_answer_path, result_path, "")
+    # 仅仅使用词长作为特征 2 69 0.028985507246376812

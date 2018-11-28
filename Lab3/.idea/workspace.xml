@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/ME_external.py" description="features" line="101" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7b3e1f8b-f7ea-4921-81f0-b3e906138c92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/standard_answer_path.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AnalyzeFeature.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ME_external.py" beforeDir="false" afterPath="$PROJECT_DIR$/ME_external.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ME_model_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/ME_model_path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/featuresfile_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/featuresfile_path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/gameLocation.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/result_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/result_path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/standard_answer_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/standard_answer_path.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/test_feature_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/test_feature_path.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/testfile_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/testfile_path.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval1.iob2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval1.raw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval2.iob2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval2.raw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtest/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtest/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtraining/Genia4ERtask1.iob2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtraining/Genia4ERtask2.iob2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtraining/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtraining/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtraining/evalIOB2.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtraining/sampletest1.iob2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtraining/sampletest1.raw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtraining/sampletest2.iob2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Genia4ERtraining/sampletest2.raw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/JNLPBA2004_eval/1978-1989.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/JNLPBA2004_eval/1990-1999.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/JNLPBA2004_eval/2000-2001.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/JNLPBA2004_eval/Genia4EReval.ref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/JNLPBA2004_eval/ReadMe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/JNLPBA2004_eval/S1998-2001.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/JNLPBA2004_eval/SharedTaskEval.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/JNLPBA2004_eval/evalIOB2.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trainfile_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/trainfile_path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../中文信息处理/Lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../中文信息处理/Lab1/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,55 +29,57 @@
     <session id="-2019897032">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dat" value="7" />
+          <entry key="dummy" value="15" />
           <entry key="iob2" value="3" />
-          <entry key="py" value="2123" />
-          <entry key="txt" value="8" />
+          <entry key="py" value="3313" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="2123" />
+          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="Python" value="3313" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="dat" value="1" />
-          <entry key="iob2" value="10" />
+          <entry key="iob2" value="11" />
           <entry key="pl" value="1" />
-          <entry key="py" value="5" />
-          <entry key="raw" value="3" />
-          <entry key="txt" value="17" />
+          <entry key="py" value="8" />
+          <entry key="raw" value="4" />
+          <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="PLAIN_TEXT" value="48" />
           <entry key="Perl" value="1" />
-          <entry key="Python" value="5" />
+          <entry key="Python" value="8" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6503635">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ME.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-373">
+                <state relative-caret-position="22">
                   <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
                   <folding>
                     <marker date="1543317333688" expanded="true" signature="531:533" ph="..." />
@@ -101,10 +89,15 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/dsad.txt">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ME_external.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="255" column="24" lean-forward="true" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
+                <state relative-caret-position="133">
+                  <caret line="106" column="28" lean-forward="true" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
                   <folding>
                     <element signature="e#0#35#0" expanded="true" />
                   </folding>
@@ -113,10 +106,51 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/standard_answer_path.txt">
+            <entry file="file://$PROJECT_DIR$/AnalyzeFeature.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1108">
-                  <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+                <state relative-caret-position="397">
+                  <caret line="34" selection-start-line="34" selection-end-line="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test5.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret selection-end-column="385" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test3.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1006">
+                  <caret line="3629" column="7" selection-start-line="3629" selection-start-column="6" selection-end-line="3629" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="44">
+                  <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test2.txt">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data/featuresfile_path.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-2662">
+                  <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -124,56 +158,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.iob2">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="130" column="13" lean-forward="true" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+                <state relative-caret-position="138">
+                  <caret line="1426" column="21" lean-forward="true" selection-start-line="1426" selection-start-column="21" selection-end-line="1426" selection-end-column="21" />
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.raw">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="484">
-                  <caret line="184" column="2" lean-forward="true" selection-start-line="129" selection-end-line="184" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/testfile_path.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="534">
-                  <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/data/result_path.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="88">
-                  <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/ME_model_path.txt">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/featuresfile_path.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="44">
-                  <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/test_feature_path.txt">
-              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -181,10 +169,19 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/data/standard_answer_path.txt">
+            <entry file="file://$PROJECT_DIR$/test.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1232">
-                  <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+                <state relative-caret-position="330">
+                  <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test4.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="88">
+                  <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -204,6 +201,9 @@
     <findStrings>
       <find>features</find>
       <find>get_features</find>
+      <find>#</find>
+      <find>glucocorticoid</find>
+      <find>factor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,20 +214,21 @@
       <list>
         <option value="$PROJECT_DIR$/ME.py" />
         <option value="$PROJECT_DIR$/data/gameLocation.dat" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/data/test.txt" />
-        <option value="$PROJECT_DIR$/data/trainfile_path.txt" />
         <option value="$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval1.iob2" />
         <option value="$PROJECT_DIR$/data/standard_answer_path.txt" />
         <option value="$PROJECT_DIR$/data/testfile_path.txt" />
+        <option value="$PROJECT_DIR$/data/trainfile_path.txt" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/AnalyzeFeature.py" />
         <option value="$PROJECT_DIR$/ME_external.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="51" />
+    <option name="x" value="601" />
     <option name="y" value="27" />
-    <option name="width" value="935" />
+    <option name="width" value="1319" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -238,7 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,6 +266,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,7 +318,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AnalyzeFeature.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,7 +355,7 @@
     <frame x="51" y="27" width="1869" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17950109" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1583514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -381,32 +382,32 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>165</line>
+          <line>190</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>254</line>
+          <line>281</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>123</line>
+          <line>146</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>170</line>
+          <line>194</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>189</line>
+          <line>213</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>216</line>
+          <line>240</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
@@ -420,19 +421,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval2.iob2">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsad.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval2.iob2" />
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1247971762/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -440,49 +429,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/Genia4ERtraining/Genia4ERtask1.iob2">
+    <entry file="file://$PROJECT_DIR$/doc/Genia4ERtraining/Genia4ERtask1.iob2" />
+    <entry file="file://$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval1.raw" />
+    <entry file="file://$PROJECT_DIR$/doc/Genia4ERtraining/sampletest1.iob2" />
+    <entry file="file://$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval1.iob2" />
+    <entry file="file://$PROJECT_DIR$/doc/JNLPBA2004_eval/SharedTaskEval.pl" />
+    <entry file="file://$PROJECT_DIR$/doc/JNLPBA2004_eval/ReadMe.txt" />
+    <entry file="file://$PROJECT_DIR$/data/test_feature_path.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.raw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="10330" column="1" selection-start-line="9999" selection-end-line="10330" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/testfile_path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="332" lean-forward="true" selection-start-line="332" selection-end-line="332" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/trainfile_path.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="534">
+          <caret line="1500" lean-forward="true" selection-start-line="1500" selection-end-line="1500" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval1.raw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="1" lean-forward="true" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/Genia4ERtraining/sampletest1.iob2">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/ME_model_path.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/test_feature_path.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/featuresfile_path.txt">
+    <entry file="file://$PROJECT_DIR$/data/standard_answer_path.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        <state relative-caret-position="746">
+          <caret line="332" lean-forward="true" selection-start-line="332" selection-end-line="332" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval1.iob2">
+    <entry file="file://$PROJECT_DIR$/data/result_path.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="-770">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.iob2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="1426" column="21" lean-forward="true" selection-start-line="1426" selection-start-column="21" selection-end-line="1426" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1006">
+          <caret line="3629" column="7" selection-start-line="3629" selection-start-column="6" selection-end-line="3629" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ME.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
+        <state relative-caret-position="22">
           <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding>
             <marker date="1543317333688" expanded="true" signature="531:533" ph="..." />
@@ -490,58 +510,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/JNLPBA2004_eval/SharedTaskEval.pl">
+    <entry file="file://$PROJECT_DIR$/dsad.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/JNLPBA2004_eval/ReadMe.txt">
+    <entry file="file://$PROJECT_DIR$/test5.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="13" selection-end-column="19" />
+        <state>
+          <caret selection-end-column="385" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/standard_answer_path.txt">
+    <entry file="file://$PROJECT_DIR$/data/featuresfile_path.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1108">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="-2662">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.iob2">
+    <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="130" column="13" lean-forward="true" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+        <state relative-caret-position="44">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.raw">
+    <entry file="file://$PROJECT_DIR$/AnalyzeFeature.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="184" column="2" lean-forward="true" selection-start-line="129" selection-end-line="184" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/testfile_path.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="397">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ME_external.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="255" column="24" lean-forward="true" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
+        <state relative-caret-position="133">
+          <caret line="106" column="28" lean-forward="true" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/result_path.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>

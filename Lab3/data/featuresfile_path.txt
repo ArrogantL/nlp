@@ -1,10 +1,10 @@
 O 6
 O 2
-B-protein 14
-I-protein 9
+B-protein 14 glucocorticoid
+I-protein 9 receptors
 O 2
-B-cell_type 11
-O 3
+B-cell_type 11 lymphocytes
+O 3 and
 O 5
 O 11
 O 2
@@ -19,20 +19,20 @@ O 1
 O 9
 O 5
 O 2
-B-protein 14
-I-protein 9
-O 1
-B-protein 2
-O 1
+B-protein 14 glucocorticoid
+I-protein 9 receptors
+O 1 (
+B-protein 2 GR upper
+O 1 )
 O 2
 B-cell_type 10
-I-cell_type 5
-I-cell_type 11
+I-cell_type 5 blood
+I-cell_type 11 lymphocytes
 O 4
 O 20
 O 8
 O 1
-O 3
+O 3 and
 O 2
 O 8
 O 5
@@ -43,3 +43,1458 @@ O 5
 O 10
 O 10
 O 1
+
+O 2
+O 3
+B-cell_type 11 lymphocytes
+O 4
+O 1
+O 4
+B-protein 2 GR upper
+O 6
+O 1
+O 13
+O 9
+O 1
+O 2 upper has_digit
+O 1
+O 10 -
+O 3 and
+O 1
+O 2 upper has_digit
+O 1
+O 8 -
+O 13
+O 4
+O 3 upper
+O 3 and
+O 11
+O 1
+O 12
+O 1
+O 2
+O 3
+O 4
+O 6
+O 2
+O 2
+O 3
+B-cell_type 7
+I-cell_type 5 cells
+O 1
+
+O 2
+O 3
+O 5
+O 4
+O 1
+O 1
+O 9
+B-protein 2 GR upper
+O 6
+O 8
+O 2
+O 1
+O 4
+O 9
+O 13
+O 10
+O 2
+O 3
+O 13
+O 2
+O 7
+O 9
+O 1
+
+O 5
+O 4
+O 6
+O 4
+O 3
+O 11
+O 2
+B-cell_type 11 lymphocytes
+O 2
+O 15
+O 7
+O 4
+O 4
+O 1
+O 8
+O 2
+B-protein 2 GR upper
+O 5
+O 1
+
+O 1
+B-protein 1 has_digit
+I-protein 1
+I-protein 19 - has_digit
+I-protein 2 upper has_digit
+I-protein 9 receptors
+O 2
+B-cell_type 11 lymphocytes
+O 3 and
+B-cell_type 2 - upper
+I-cell_type 3 and
+I-cell_type 12 -
+O 5
+O 2
+O 8
+O 4
+O 18
+O 1
+
+O 7
+O 2
+O 9 receptors
+O 2
+O 8
+O 4
+O 2
+O 7
+O 2 upper has_digit
+O 1
+O 4 has_digit
+O 1 (
+O 2 upper
+O 1 )
+O 3 upper has_digit
+O 1
+O 11
+O 4 has_digit
+O 8
+O 2
+O 7 protein
+O 2
+B-cell_type 11 lymphocytes
+O 2
+O 10
+O 5 blood
+O 2
+O 8
+O 4
+O 18
+O 1
+
+O 2
+O 3
+O 8
+O 13
+O 2
+O 5
+O 3 and
+O 7
+O 4
+O 2
+O 4 has_digit
+O 3
+O 9
+O 4
+O 2
+O 4 has_digit
+O 7
+O 3 and
+O 4 has_digit
+O 7
+O 1
+O 12
+O 1
+O 5
+O 2
+O 8
+O 2
+O 12
+O 1 (
+O 3 upper
+O 1 )
+O 2
+O 2 has_digit
+O 1
+O 3 and
+O 1
+O 8
+O 8
+O 2
+O 2 has_digit
+O 1 (
+O 2 upper
+O 1 )
+O 1 upper
+O 13
+O 1 (
+O 5
+O 4
+O 4 has_digit
+O 5
+O 1 )
+O 3
+O 5
+O 2
+O 5 blood
+O 1
+O 7
+O 2
+O 4
+O 3
+O 4
+O 9
+O 2
+O 11 lymphocytes
+O 2
+O 2 has_digit
+O 1
+O 1
+
+O 2
+O 3
+O 4
+O 4
+O 1
+O 5
+O 7
+O 2
+B-cell_type 1 T upper
+I-cell_type 11 lymphocytes
+O 3
+O 9
+O 8 - has_digit
+O 2
+O 10
+O 5 blood
+O 1
+
+O 9
+O 4
+O 16 -
+O 2 upper has_digit
+O 1 (
+O 5 - has_digit
+O 2
+O 5
+O 1
+O 6
+O 1 has_digit
+O 5
+O 1 )
+O 3
+O 2
+O 13
+O 2
+O 5
+O 3 and
+O 7
+O 4
+O 2
+O 4 has_digit
+O 3 and
+O 2
+O 2 has_digit
+O 1 (
+O 2 upper
+O 1 )
+O 1 upper
+O 1
+O 3
+O 3
+O 3
+O 6
+O 3
+O 3 upper
+O 7
+O 2
+O 5 blood
+O 1
+
+O 13
+O 2
+O 3
+B-protein 9 receptors
+O 2
+O 4 has_digit
+O 1 (
+O 2 upper
+O 1 )
+O 3 upper has_digit
+O 3
+O 8
+O 2
+O 2
+O 4 has_digit
+O 8
+O 5
+O 1 upper
+O 4
+O 2
+O 3
+O 9
+O 1
+O 7
+O 2
+O 3
+O 9
+O 2
+O 3
+O 7
+O 5
+O 4 has_digit
+O 8
+O 6
+O 1 has_digit
+O 5
+O 1
+O 12
+O 10
+O 2
+O 3
+O 4
+O 7
+O 3
+O 8
+O 2
+B-cell_type 11 lymphocytes
+O 1
+
+O 9
+O 4
+O 2 - has_digit
+O 1 (
+O 2 upper
+O 1 )
+O 2 upper has_digit
+O 10
+O 4
+O 3
+B-cell_type 1 T upper
+I-cell_type 11 lymphocytes
+O 7
+O 2
+O 10
+O 5 blood
+O 1
+
+O 3
+O 4
+O 8
+O 7
+O 4
+O 5
+O 10
+O 2
+O 18
+O 4
+O 4
+O 7
+O 2
+B-protein 9 receptors
+O 2
+O 4 has_digit
+O 1 (
+O 2 upper
+O 1 )
+O 3 upper has_digit
+O 2
+B-cell_type 11 lymphocytes
+O 7
+O 2
+O 7
+O 3
+O 4 cell
+O 8
+O 2
+O 3
+O 7
+O 6
+O 1
+
+O 5
+O 3 and
+O 5
+O 20 - has_digit
+O 10
+O 2
+O 5
+O 4
+O 6
+O 6
+O 1
+
+O 2
+O 11
+O 7
+O 3
+B-cell_type 5
+O 10
+O 2
+B-protein 20 - has_digit
+O 1 (
+B-protein 4
+I-protein 3 - upper has_digit
+O 1 )
+O 5
+O 5
+O 2
+O 1
+O 6
+O 2
+O 5
+O 8
+O 8
+O 1
+O 3
+O 7
+O 7
+O 9
+O 2
+B-cell_type 6
+I-cell_type 10
+O 4
+O 2 has_digit
+O 11
+O 6
+O 8
+O 1
+
+O 8
+O 2
+B-protein 4
+I-protein 3 - upper has_digit
+O 3
+O 8
+O 2
+O 20
+O 1
+
+O 2
+O 11
+O 12
+O 4
+O 5
+O 7
+B-protein 5
+I-protein 4
+I-protein 3 - upper has_digit
+O 10
+O 3 and
+O 7
+O 10
+O 10
+O 4
+O 2
+O 4
+O 1
+O 10
+O 3 and
+O 7 nuclear
+O 6
+O 1
+O 7
+O 5
+O 1
+O 8
+O 1
+O 8
+O 8
+O 1
+O 3 and
+O 11
+O 12
+O 1
+
+O 8
+O 1
+B-protein 4
+I-protein 3 - upper has_digit
+O 3
+O 3
+O 10
+O 4
+O 7
+O 2
+O 7
+O 9
+O 4
+O 2
+O 3 upper
+O 1
+O 1 (
+O 4 upper
+O 1
+O 14
+O 2
+B-cell_type 9
+I-cell_type 6
+O 1 )
+O 7
+O 3 and
+O 8
+O 5
+O 4
+O 11
+O 2
+O 4
+O 8
+O 1
+O 12
+O 1
+O 3 and
+O 14 glucocorticoid
+O 8 receptor
+O 6
+O 1
+
+O 7
+O 1
+O 5
+O 3
+O 1
+O 13
+O 8
+O 11
+O 7
+B-protein 5
+I-protein 4
+I-protein 3 - upper has_digit
+O 10
+O 3 and
+O 3
+O 6
+O 2
+O 11
+O 12
+O 2
+O 3
+O 5
+O 6
+O 1
+
+B-protein 4
+I-protein 3 - upper has_digit
+O 5
+O 6
+O 4
+O 10
+O 2
+O 2
+O 13 -
+O 13
+O 5
+O 2
+O 7
+O 4
+O 2 has_digit
+O 2
+O 3
+O 5
+O 5
+O 1
+
+O 8
+O 4
+O 2
+O 3
+O 7
+O 6
+O 3
+O 4
+O 8
+O 2
+O 5
+O 4
+O 6
+O 1 (
+O 2 upper has_digit
+O 1 )
+O 7
+O 6
+O 1
+O 3
+O 7
+O 6
+O 2
+O 6
+O 3
+O 11
+O 12
+O 7
+B-protein 4
+I-protein 3 - upper has_digit
+O 10
+O 2
+O 3
+O 5
+O 4
+O 5
+O 6
+O 2
+O 7
+B-protein 5
+I-protein 4
+I-protein 3 - upper has_digit
+O 3 and
+O 3
+O 5
+O 10
+O 1
+O 10
+O 1
+O 3 and
+O 8
+O 7 factors
+O 1
+
+O 1
+O 11
+O 11
+O 2
+O 5
+B-protein 9 -
+I-protein 1 upper
+I-protein 8 receptor
+O 6
+O 2
+O 5
+O 2
+O 6
+O 17 -
+O 3 and
+O 8
+O 5
+O 1
+
+O 2
+O 3 has_digit
+O 5
+O 2
+O 17 -
+O 3 and
+O 8
+O 5
+O 1
+B-protein 4
+I-protein 4
+I-protein 1 upper
+I-protein 8 receptor
+O 6
+O 1 (
+B-protein 2
+O 1 )
+O 2
+O 5
+O 4
+O 8
+O 2
+O 5 upper
+O 1
+
+O 3
+O 5
+O 2
+B-protein 2
+O 3
+O 13
+O 9
+O 6
+O 3
+O 5
+O 9
+O 1
+O 8
+O 6
+O 2
+O 3
+O 6
+O 9
+O 1
+O 3 and
+O 9
+O 2
+O 6
+O 2
+O 3
+O 5
+O 9
+O 1
+
+O 3
+O 5
+O 8
+O 5
+O 2
+O 2 has_digit
+O 3 upper
+O 5
+O 3
+O 8
+O 6
+O 2
+O 7
+O 11
+O 2
+O 8
+O 4
+O 3
+O 6
+O 3 has_digit
+O 9
+O 5
+O 1
+
+O 3
+O 7
+O 8
+O 4
+O 5
+O 2
+O 1
+O 12
+O 7
+O 1
+O 6
+O 2
+B-cell_type 1 T upper
+I-cell_type 4 cell
+O 8
+O 3 and
+O 9
+O 1
+
+B-protein 5
+I-protein 10 -
+I-protein 3 upper
+I-protein 7 binding
+I-protein 8 proteins
+O 1
+O 4
+O 2
+O 3
+O 10
+O 2
+B-DNA 5 human
+I-DNA 13 - has_digit
+I-DNA 4 gene
+O 10
+O 1
+
+O 15
+O 10
+O 2
+O 3
+B-DNA 5 human
+I-DNA 13 - has_digit
+I-DNA 1 (
+I-DNA 4 IL-2 - upper has_digit
+I-DNA 1 )
+I-DNA 4 gene
+O 1
+O 4
+O 9
+O 2
+O 3
+B-DNA 4 IL-2 - upper has_digit
+I-DNA 8 receptor
+I-DNA 5 alpha
+I-DNA 1 (
+I-DNA 5 - upper has_digit
+I-DNA 5 alpha
+I-DNA 1 )
+I-DNA 4 gene
+O 3 and
+O 3
+O 4
+O 1 has_digit
+O 5 human
+O 16
+O 5
+O 1 (
+O 5 - upper has_digit
+O 1 )
+O 1
+O 2
+O 5
+O 2
+O 2
+O 9
+O 2
+O 1
+B-protein 5
+I-protein 6 -
+I-protein 8
+I-protein 7
+O 1
+
+O 8
+O 2
+O 1
+B-DNA 5
+I-DNA 1 B upper
+I-DNA 4
+I-DNA 8
+O 10
+O 2
+O 3
+B-DNA 4 IL-2 - upper has_digit
+I-DNA 8 promoter
+O 1 (
+O 4 - has_digit
+O 2
+O 4 - has_digit
+O 1 )
+O 9
+O 8
+O 4
+O 8 -
+O 3 and
+O 6 - upper
+O 12 -
+O 10
+O 2
+O 4
+B-protein 13 transcription
+I-protein 4
+O 3 and
+O 6
+O 3
+O 8
+O 7 binding
+O 2
+O 3
+B-protein 9
+I-protein 8
+I-protein 7 factors
+O 1
+
+O 5
+B-protein 5
+I-protein 10 -
+I-protein 8 proteins
+O 1 (
+O 2 has_digit
+O 2
+O 2 has_digit
+O 3 and
+O 2 has_digit
+O 2
+O 2 has_digit
+O 11
+O 1 )
+O 9
+O 8
+O 4
+O 3
+O 10
+B-protein 5
+I-protein 1 B upper
+I-protein 8
+O 7
+O 2
+O 3
+B-DNA 5 - upper has_digit
+I-DNA 5 alpha
+I-DNA 8 promoter
+O 1
+
+O 5
+O 4
+O 7
+O 4
+O 5
+B-protein 5
+I-protein 10 -
+I-protein 8 proteins
+O 4
+O 1
+O 4
+O 2
+O 3
+O 10
+O 10
+O 2
+O 4
+O 6
+O 13 -
+O 6 factor
+O 8 receptor
+O 4 gene
+O 6
+O 4
+O 8
+B-cell_type 1 T upper
+I-cell_type 4 cell
+O 13
+O 1
+
+O 5
+O 6
+O 6
+O 3
+B-DNA 1 upper
+I-DNA 5
+I-DNA 4 gene
+I-DNA 8 promoter
+O 2
+O 11
+O 3
+O 6
+O 3 and
+O 14 -
+O 10
+O 2
+B-DNA 14
+I-DNA 5 genes
+O 2
+B-cell_type 5 human
+I-cell_type 8
+I-cell_type 9
+O 1
+
+B-protein 14
+I-protein 13 -
+I-protein 11
+I-protein 7 factors
+O 4
+O 4
+O 5
+O 2
+O 4
+O 1
+O 4
+O 2
+O 8
+O 15 -
+O 10
+O 2
+B-DNA 14
+I-DNA 5 genes
+O 1
+
+O 3
+O 4
+O 2
+O 5
+O 7 factors
+O 2
+B-cell_type 6 -
+O 15
+O 3 and
+O 14 -
+O 10
+O 2
+O 5
+O 5 genes
+O 2
+O 1
+O 7
+O 1
+O 3
+O 5
+O 10
+O 1
+
+O 2
+O 4
+O 4
+O 1
+O 5
+O 2
+O 5 human
+O 8
+O 9
+O 2
+O 7
+O 4
+O 8
+O 1
+
+O 9
+O 9
+O 2
+B-DNA 12
+I-DNA 5 human
+I-DNA 8
+I-DNA 6
+O 2
+B-DNA 14
+I-DNA 5
+I-DNA 4 gene
+O 1 (
+B-DNA 1 upper
+I-DNA 5
+O 1 )
+O 4
+O 4
+O 3
+O 9 -
+O 2
+O 5
+O 13 transcription
+O 3 and
+O 3 upper
+O 8
+O 5
+O 6
+O 1
+
+O 10
+O 9
+O 11
+O 2
+O 2
+O 5
+O 13 transcription
+O 4
+O 3
+O 4
+O 4
+O 4
+O 7 nuclear
+O 8
+O 7
+O 4
+B-cell_type 6 -
+I-cell_type 9
+O 13
+O 2
+O 3
+O 4
+O 6
+O 2
+B-cell_type 6 -
+O 15
+O 3
+O 5
+O 2
+O 2
+O 9
+O 2
+O 3
+O 7
+O 2
+O 5
+O 6 factor
+O 1 (
+O 1
+O 1 )
+O 2
+O 3
+O 3 upper
+O 6
+O 6
+O 3
+B-DNA 1 upper
+I-DNA 5
+I-DNA 4 gene
+I-DNA 8 promoter
+O 1
+
+O 4
+O 6
+O 2
+O 7
+O 6
+O 3
+O 3 has_digit
+O 2
+O 8
+O 7
+O 3 has_digit
+O 2
+O 8
+O 4
+O 3
+O 6
+O 6
+O 3 and
+O 4
+O 8
+O 10
+O 1
+O 8
+O 5
+O 3 upper
+O 6
+O 1
+O 5
+O 5
+O 1
+O 4
+O 2
+O 3
+O 6 -
+O 3 and
+O 15 -
+O 10
+O 2
+B-DNA 14
+I-DNA 5 genes
+O 1
+
+O 1
+O 13
+O 2
+O 3
+O 11
+O 2
+B-protein 15
+O 2
+O 5
+O 1
+
+O 1 upper
+O 8
+O 6
+O 3
+O 3
+O 13
+O 2
+B-protein 14 glucocorticoid
+I-protein 9 receptors
+O 2
+B-cell_type 5 human
+I-cell_type 11 lymphocytes
+O 2
+O 9
+O 1
+
+O 3
+O 9
+O 11
+O 2
+O 3
+O 6
+O 2
+O 15
+O 2
+O 3
+B-cell_type 10
+O 5
+O 2
+O 1
+O 6
+O 1 (
+O 1 has_digit
+O 3
+O 1 )
+O 3 and
+O 3
+O 7
+B-protein 7
+O 13
+O 1
+
+O 3
+O 12
+O 5
+O 4
+O 3 and
+O 5
+O 1
+O 6
+O 3
+O 5
+O 2
+O 3
+O 4
+O 10
+O 1
+O 3 and
+O 5
+O 3
+O 2
+O 1
+O 6
+O 6
+O 2
+O 5 blood
+O 1
+
+O 12
+O 2
+O 2 has_digit
+O 8
+O 4
+O 1 has_digit
+O 2
+O 2 has_digit
+O 9
+O 4
+O 3
+O 9
+O 4
+O 2
+O 18
+O 4
+O 4
+O 2
+O 8
+O 2
+O 11
+O 3
+O 6
+O 2
+O 8
+O 1
+O 4
+O 10
+O 4
+O 6
+O 2
+O 8
+O 7 binding
+O 1 upper
+O 1
+O 6 has_digit
+O 3 -
+O 5 has_digit
+O 1 (
+O 1
+O 1
+O 2 has_digit
+O 1
+O 1
+O 1
+O 4 has_digit
+O 1
+O 1
+O 1
+O 4 has_digit
+O 1 )
+O 1
+O 4
+O 13
+O 2
+O 1
+O 8
+O 4
+O 2
+B-protein 7
+O 10 -
+O 18
+O 1
+O 3 and
+O 4
+O 10
+O 3
+O 6
+O 2
+O 8
+O 7 binding
+O 1 upper
+O 1
+O 6 has_digit
+O 3 -
+O 5 has_digit
+O 1 (
+O 1
+O 1
+O 2 has_digit
+O 1
+O 1
+O 1
+O 4 has_digit
+O 1
+O 1
+O 1
+O 4 has_digit
+O 1 )
+O 1
+O 4
+O 11
+O 2
+B-protein 7
+O 10 -
+O 18
+O 1
+
+O 7
+O 7
+O 4
+O 3
+O 5
+O 3
+O 13
+O 11
+O 7
+O 2
+O 3
+O 8
+O 7 binding
+O 6
+O 1
+
+O 5
+O 7
+O 6
+O 9
+O 3
+O 8
+O 7 binding
+O 5
+O 2
+O 1
+O 10
+O 9
+O 2
+O 3
+O 10
+O 2
+B-protein 14
+O 7
+O 1
+O 4
+O 6
+O 1
+O 4
+O 10
+O 2
+O 3
+O 9
+O 6
+O 2
+O 9
+O 10
+O 1
+
+B-protein 15 -
+I-protein 8 proteins
+O 4
+B-cell_line 1 B upper
+I-cell_line 2
+I-cell_line 4
+I-cell_line 5 cells
+O 9
+O 13 transcription
+O 2
+O 3
+B-DNA 14
+I-DNA 11 -
+I-DNA 8 promoter
+O 2
+O 5
+O 1
+
+O 3
+B-cell_type 6 -
+O 5 -
+O 11
+O 2
+O 3
+B-protein 14
+O 1 (
+B-protein 2
+O 1 )
+O 11 -
+O 3 and
+O 11 -
+O 9
+O 2
+O 8
+O 2
+O 2
+B-DNA 14
+I-DNA 1 (
+I-DNA 4 upper
+I-DNA 1 )
+I-DNA 7
+O 1
+O 8 upper
+O 1
+O 4
+O 2
+O 4
+O 1
+O 10
+O 9
+O 2
+O 5
+B-DNA 3 upper
+I-DNA 10
+I-DNA 2 upper
+I-DNA 9
+O 1
+O 4
+O 2
+O 5
+O 3 and
+O 7
+O 3 upper has_digit
+O 9
+O 1
+
+O 3
+B-protein 7 nuclear
+I-protein 8 proteins
+O 4
+O 4
+O 12
+O 3 and
+O 4
+O 4
+O 8
+O 2
+O 3
+B-DNA 4 upper
+I-DNA 7
+O 4
+O 4
+O 10
+O 1
+
+B-protein 5 - upper has_digit
+O 2
+O 7
+O 2
+O 1
+O 7
+O 2
+O 4 cell
+O 5
+O 1
+O 7
+O 3
+O 8
+O 2
+B-protein 5 - upper has_digit
+O 2
+O 11
+O 8
+O 2
+B-cell_type 1 B upper
+I-cell_type 5 cells
+O 1
+O 7
+O 2
+O 3
+O 10
+O 4
+B-protein 5 - upper has_digit
+O 9
+O 18 -
+O 13 transcription
+O 2
+O 3
+B-DNA 2
+I-DNA 8 promoter
+O 3 and
+B-protein 5 - upper has_digit
+O 8
+O 3
+O 5
+O 9
+O 2
+O 3
+B-DNA 4 upper
+I-DNA 7
+O 1
+
+O 8
+O 2
+O 3
+B-cell_line 6 -
+I-cell_line 4 line
+O 1
+B-cell_line 5 - upper
+O 1
+O 7
+O 4
