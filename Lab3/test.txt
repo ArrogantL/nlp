@@ -1,3 +1,4 @@
+# 训练语料所有的非O
 glucocorticoid	B-protein
 receptors	I-protein
 lymphocytes	B-cell_type

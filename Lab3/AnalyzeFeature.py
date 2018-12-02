@@ -1,14 +1,28 @@
 from collections import defaultdict
 
-if __name__ == '__main__':
-    f = open("data/Genia4ERtest/Genia4EReval1.iob2", "r")
-    ff = open("test5.txt", "w")
+src="data/Genia4ERtest/Genia4EReval1.iob2"
+def allnotO():
+    srcfile=open(src,"r")
+    tagfile=open("notOwithOrder.txt","w")
     dict = {}
     while True:
         line = f.readline()
         if line == '':
             break
+        fields = line.strip().split()
+        if len(fields) == 0 or fields[1] == 'O':
+            continue
 
+    f.close()
+    ff.close()
+if __name__ == '__main__':
+    f = open("data/Genia4ERtraining/Genia4ERtask1.iob2", "r")
+    ff = open("task1-1o%.txt", "w")
+    dict = {}
+    while True:
+        line = f.readline()
+        if line == '':
+            break
         fields = line.strip().split()
         if len(fields) == 0 or fields[1] == 'O':
             continue
@@ -18,10 +32,12 @@ if __name__ == '__main__':
     for label in dict:
         # ff.write(label + ' #' + '\n')
         sorted_list = sorted(dict[label].items(), key=lambda item: item[1], reverse=True)
+        i=0
+        limit=len(sorted_list)//10
         for word,count in sorted_list:
             # ff.write(word +' '+str(count)+ '\n')
-            if count>50:
-                ff.write('"'+word+'",')
+            if i<limit:
+                 ff.write('"'+str(count)+'",')
 
 
     ff.close()

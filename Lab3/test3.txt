@@ -1,3 +1,4 @@
+#按类划分并按出现次数排序的非O训练语料
 B-protein #
 glucocorticoid 121
 NF-kappaB 101

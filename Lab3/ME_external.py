@@ -1,4 +1,5 @@
 from collections import defaultdict
+from queue import Queue
 import numpy as np
 
 
@@ -28,7 +29,9 @@ class maxEntropy(object):
     def train(self, max_iter=1000):
         self.initP()  # 主要计算M以及联合分布在f上的期望
         # 下面计算条件分布及其期望，正式开始训练
+
         for i in range(max_iter):  # 计算条件分布在特诊函数上的期望
+            print(i,max_iter)
             self.ep = self.EP()
             self.lastw = self.w[:]
             for i, w in enumerate(self.w):
@@ -93,44 +96,104 @@ class maxEntropy(object):
 
         return prob
 
-    keywords = ["glucocorticoid", "NF-kappaB", "NF-kappa", "transcription", "IL-2", "nuclear", "IL-4", "GR", "factor",
-                "receptor", "protein", "receptors", "(", ")", "B", "and", "kinase", "factors", "proteins", "alpha",
-                "transcription", "binding", "T", "human", "B", "lymphocytes", "cells", "T", "lymphocytes", "(", ")",
-                "cell", "and", "+", "blood", "B", "gene", "promoter", "genes", "site", "and", "(", ")", "cells", "cell",
-                "lines", "line", "mRNA"]
+    keywords = ["human", "IL-2", "promoter", "HIV-1", "kappa", "c-fos", "LTR", "NF-kappa", "c-jun", "5", "AP-1",
+                "enhancer", "reporter", "cDNA", "HIV", "immunoglobulin", "DNA", "transcription", "GM-CSF", "promoters",
+                "binding", "gene", "promoter", "site", "genes", ")", "(", "element", "and", "sites", "enhancer",
+                "region", "binding", "elements", "sequence", "B", "repeat", "DNA", "alpha", "'", "receptor", "terminal",
+                "sequences", "regulatory", "reporter", "motif", "response", ",", "II", "to", "box", "promoters",
+                "constructs", "LTR", "factor", "virus", "long", "1", "motifs", ";", "kappa", "bp", "2", "construct",
+                "locus", "cDNA", "class", "regions", "beta", "3", "NF-kappa", "transcription", "NF-kappaB", "IL-2",
+                "nuclear", "AP-1", "IL-4", "I", "TNF-alpha", "IFN-gamma", "glucocorticoid", "cytokine", "protein",
+                "cytokines", "IL-10", "human", "NFAT", "TCR", "NF-AT", "Tax", "TNF", "tumor", "PKC", "CD40", "IL-6",
+                "p50", "GR", "IL-12", "CD28", "p65", "GATA-1", "NF", "IL-1", "calcineurin", "T", "interleukin",
+                "GM-CSF", "STAT3", "c-Jun", "STAT", "STAT1", "PU.1", "IL-2R", "Sp1", "transcriptional", "CIITA",
+                "c-Rel", "LMP1", "interleukin-2", "VCAM-1", "IL-5", "Oct-2", "DNA-binding", "NFkappaB", "ER", "STAT5",
+                "ICAM-1", "IFN", "cytoplasmic", "IL-13", "IL-8", "MHC", "CREB", "Stat3", "anti-CD3", "VDR", "tyrosine",
+                "Bcl-2", "E2F", "IgE", "c-Fos", "T-cell", "Oct-1", "TCF-1", "CD3", "RAR", "Fas", "cellular", "BSAP",
+                "Tat", "NFATp", "IL-1beta", "IkappaBalpha", "signal", "C/EBP", "TNFalpha", "B", "factor", "protein",
+                "receptor", ")", "(", "factors", "proteins", "alpha", "kinase", "kappa", "transcription", "receptors",
+                "and", "domain", "complex", "family", "binding", "II", "1", "beta", "necrosis", "complexes", "cell",
+                "of", ",", "molecules", "C", "antigen", "kinases", "I", "subunit", "nuclear", "2", "T", "gamma",
+                "antibody", "class", "activated", "molecule", "antibodies", "A", "adhesion", "virus", "domains",
+                "activator", "type", "cells", "chain", "gene", "region", "tyrosine", "colony-stimulating", "cytokines",
+                "regulatory", "NF-kappa", "surface", "mAb", "factor-alpha", "acid", "product", "3", "factor-kappa",
+                "cytokine", "antigens", "kappaB", "3-kinase", "membrane", "protein-1", "T", "human", "B", "monocytes",
+                "peripheral", "lymphocytes", "activated", "primary", "macrophages", "normal", "PBMC", "erythroid",
+                "endothelial", "mononuclear", "monocytic", "neutrophils", "myeloid", "hematopoietic", "resting",
+                "cells", "T", "lymphocytes", "blood", "monocytes", "cell", "B", "and", "mononuclear", "human",
+                "peripheral", ")", "(", "leukocytes", "lineage", "macrophages", "progenitors", "human", "Jurkat",
+                "U937", "THP-1", "T", "HeLa", "cell", "HL-60", "K562", "cells", "cell", "lines", "line", "T", "(", ")",
+                "and", "B", "human", "clones", "T-cell", "leukemia", ",", "lymphocytes", "monocytic", "U937", "Jurkat",
+                "mRNA", "mRNA", "transcripts", "RNA", "(", ")"]
 
-    def process(self, line, lastline, is_train):
-        fields = line.strip().split()
-        lastfields = lastline.strip().split()
+    def getWordShape(self, word, isAbbr=False):
+        wordshape = "Shape"
+        for i in word:
+            if i.isupper():
+                wordshape += 'X'
+            elif i.islower():
+                wordshape += 'x'
+            elif i.isdigit():
+                wordshape += 'd'
+            else:
+                wordshape += '-'
+            if isAbbr and wordshape[-1] == wordshape[-2]:
+                wordshape = wordshape[0:-1]
+
+        return wordshape
+
+    def process(self, line, lastlinesqueue, nextline, is_train):
+        field = line.strip().split()
+        nextfield = nextline.strip().split()
+        lastfields = []
+        for i in range(lastlinesqueue.qsize()):
+            lastline = lastlinesqueue.get()
+            lastfields.append(lastline.strip().split())
+            lastlinesqueue.put(lastline)
         # TODO 唯一改动，设计特征模板
-        # 空行
-        if len(fields) == 0:
+        # 处理空行
+        if len(field) == 0:
             return ''
-        # 2-gram
-        word = fields[0]
+        # 1-gram
+        word = field[0]
         s = str(len(word))
         if word in self.keywords:
-            s += ' ' + word
-        if '-' in word:
-            s += ' ' + '-'
-        if word.isupper():
-            s += ' ' + "upper"
-        if any(char.isdigit() for char in word):
-            s += ' ' + "has_digit"
-        if not len(lastfields) == 0:
-            lastword = lastfields[0]
-            if lastword in self.keywords:
-                s += " last" + lastword
-
-
+            s += ' ' + "Key" + word
+        # if '-' in word:
+        #     s += ' ' + '-'
+        # if word.isupper():
+        #     s += ' ' + "upper"
+        # if any(char.isdigit() for char in word):
+        #     s += ' ' + "has_digit"
+        # if '.' in word:
+        #     s += ' ' + '.'
+        # if word[-1] == 's':
+        #     s += ' ' + "plurality"
+        # 加入word，提升到11 80 0.1375
+        s += ' ' + word
+        # 经测试wordshape加入到s，或者代替keyword都会造成性能下降
+        s += ' shape' + self.getWordShape(word, isAbbr=False)+' abbr'+self.getWordShape(word, isAbbr=True)
+        # 2-gram
+        for lastfield in lastfields:
+            if not len(lastfield) == 0:
+                lastword = lastfield[0]
+                if lastword in self.keywords:
+                    s += " lastKey" + lastword
+        # 加入后向，略微提升279 1185 0.23544303797468355
+        if not len(nextfield) == 0:
+            nextword = nextfield[0]
+            if nextword in self.keywords:
+                s += " nextKey" + nextword
+        # 更换keywords：279 1185 0.23544303797468355->301 1132 0.2659010600706714
+        # 在21561行训练样本下测试为413 1095 0.3771689497716895
         # 以下代码不用更改
         # 测试
-        if len(fields) == 1 and not is_train:
+        if len(field) == 1 and not is_train:
             return s
 
         # 训练
-        if len(fields) == 2:
-            label = fields[1]
+        if len(field) == 2:
+            label = field[1]
             s = label + ' ' + s
             return s
 
@@ -146,14 +209,21 @@ class maxEntropy(object):
         """
         trainfile = open(trainfile_path, "r+", encoding="GB18030")
         featuresfile = open(featuresfile_path, "w", encoding="GB18030")
-        lastline = ''
+        lastlinesqueue = Queue()
+        lastlinesqueue.put('')
+        nextline = trainfile.readline()
         while True:
-            line = trainfile.readline()
+            line = nextline
+
             if line == '':
                 break
-
-            features = self.process(line, lastline, is_train)
-            lastline = line
+            nextline = trainfile.readline()
+            features = self.process(line, lastlinesqueue, nextline, is_train)
+            lastlinesqueue.put(line)
+            limit = 1
+            if lastlinesqueue.qsize() > limit:
+                lastlinesqueue.get()
+                assert lastlinesqueue.qsize() <= limit
             featuresfile.write(features + '\n')
         trainfile.close()
         featuresfile.close()

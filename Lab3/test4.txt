@@ -1,3 +1,4 @@
+#按类划分，按次数排序，非O，前22个
 B-protein #
 glucocorticoid 121
 NF-kappaB 101

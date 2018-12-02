@@ -1,3 +1,4 @@
+#按类划分的各个非O训练语料
 B-protein #
 tax
 nucleoprotein
