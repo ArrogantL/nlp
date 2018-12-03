@@ -1,28 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/ME_external.py" description="features" line="144" />
+    <bookmark url="file://$PROJECT_DIR$/ME.py" description="features" line="207" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b3e1f8b-f7ea-4921-81f0-b3e906138c92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/gameLocation.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crfpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1lastwordup50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1nextwordup50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timeforalltrainfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1/ME_model_for_task1_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1/ME_model_for_task1_1_process.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1/ME_model_for_task1_1备份.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1/ME_model_for_test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1/featuresfile_path.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1/result_path.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v1/test_feature_path.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../line_profiler-2.1.2.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnalyzeFeature.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyzeFeature.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ME_external.py" beforeDir="false" afterPath="$PROJECT_DIR$/ME_external.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/crf_learn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/crf_test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/encoder.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/feature.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/feature_cache.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/feature_index.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/lbfgs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/libcrfpp.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/libcrfpp.la" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/libcrfpp.lai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/libcrfpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/libcrfpp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/libcrfpp.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/libcrfpp.so.0.0.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/node.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/param.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/path.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/.libs/tagger.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/ChangeLog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/INSTALL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/Makefile.msvc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/Makefile.msvc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/NEWS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/aclocal.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/config.guess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/config.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/config.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/config.status" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/config.sub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/configure" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/configure.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/crf_learn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/crf_learn.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/crf_learn.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/crf_test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/crf_test.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/crf_test.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/crfpp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/darts.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/depcomp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/crfpp.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/annotated.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/classCRFPP_1_1Model-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/classCRFPP_1_1Model.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/classCRFPP_1_1Tagger-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/classCRFPP_1_1Tagger.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/crfpp_8h-source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/crfpp_8h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/crfpp_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/functions_func.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/globals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/globals_defs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/globals_func.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/globals_type.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/namespaceCRFPP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/namespacemembers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/namespacemembers_func.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/namespaces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/tab_b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/tab_l.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/tab_r.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/doxygen/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/crfpp_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/installdox" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/search/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/search/mag_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/search/nomatches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/search/search_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/search/search_m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/search/search_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/html/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/latex/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/latex/doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/doc/latex/refman.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/encoder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/encoder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/encoder.lo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/encoder.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/JapaneseNE/exec.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/JapaneseNE/template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/JapaneseNE/test.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/JapaneseNE/train.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/basenp/exec.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/basenp/template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/basenp/test.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/basenp/train.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/chunking/exec.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/chunking/template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/chunking/test.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/chunking/train.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/seg/exec.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/seg/template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/seg/test.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/example/seg/train.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature.lo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature_cache.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature_cache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature_cache.lo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature_cache.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature_index.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature_index.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature_index.lo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/feature_index.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/freelist.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/install-sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/CRFPP_wrap.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/org/chasen/crfpp/CRFPP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/org/chasen/crfpp/CRFPPConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/org/chasen/crfpp/CRFPPJNI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/org/chasen/crfpp/Model.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/org/chasen/crfpp/SWIGTYPE_p_float.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/org/chasen/crfpp/SWIGTYPE_p_int.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/org/chasen/crfpp/SWIGTYPE_p_p_char.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/org/chasen/crfpp/Tagger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/java/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/lbfgs.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/lbfgs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/lbfgs.lo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/lbfgs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/libcrfpp.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/libcrfpp.la" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/libcrfpp.lo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/libcrfpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/libtool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/ltmain.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/merge-models.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/missing" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/mkinstalldirs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/mmap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/node.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/node.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/node.lo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/node.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/param.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/param.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/param.lo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/param.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/path.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/path.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/path.lo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/path.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/perl/CRFPP.pm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/perl/CRFPP_wrap.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/perl/Makefile.PL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/perl/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/perl/test.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/CRFPP.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/CRFPP_wrap.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/build/lib.linux-x86_64-2.7/CRFPP.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/build/lib.linux-x86_64-2.7/_CRFPP.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/build/lib.linux-x86_64-3.7/CRFPP.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/build/lib.linux-x86_64-3.7/_CRFPP.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/build/temp.linux-x86_64-2.7/CRFPP_wrap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/build/temp.linux-x86_64-3.7/CRFPP_wrap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/python/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/ruby/CRFPP_wrap.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/ruby/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/ruby/extconf.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/ruby/test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/scoped_ptr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/sdk/example.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/stamp-h1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/stream_wrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/swig/CRFPP.i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/swig/CRFPP_wrap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/swig/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/swig/version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/swig/version.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/tagger.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/tagger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/tagger.lo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/tagger.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/thread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/timer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRF++-0.58/winmain.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ME.py" beforeDir="false" afterPath="$PROJECT_DIR$/ME.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ME_external.py" beforeDir="false" afterPath="$PROJECT_DIR$/v1/ME_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crfpp/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/crfpp/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crfpp/config.log" beforeDir="false" afterPath="$PROJECT_DIR$/crfpp/config.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crfpp/config.status" beforeDir="false" afterPath="$PROJECT_DIR$/crfpp/config.status" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crfpp/crf_learn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/crfpp/crf_learn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crfpp/crf_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/crfpp/crf_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crfpp/libtool" beforeDir="false" afterPath="$PROJECT_DIR$/crfpp/libtool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.iob2" beforeDir="false" afterPath="$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.iob2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.raw" beforeDir="false" afterPath="$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.raw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/ME_model_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/ME_model_path.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/featuresfile_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/featuresfile_path.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/result_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/result_path.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/standard_answer_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/standard_answer_path.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/test_feature_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/test_feature_path.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/testfile_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/testfile_path.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/trainfile_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/trainfile_path.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsad.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dsad.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1up50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/task1up50.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../中文信息处理/Lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../中文信息处理/Lab1/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,142 +272,119 @@
     <session id="-2019897032">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dat" value="15" />
-          <entry key="dummy" value="15" />
-          <entry key="iob2" value="3" />
-          <entry key="py" value="4641" />
-          <entry key="txt" value="113" />
+          <entry key="dummy" value="31" />
+          <entry key="iob2" value="4" />
+          <entry key="py" value="6094" />
+          <entry key="raw" value="1" />
+          <entry key="txt" value="143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="146" />
-          <entry key="Python" value="4641" />
+          <entry key="PLAIN_TEXT" value="194" />
+          <entry key="Python" value="6094" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="dat" value="2" />
-          <entry key="iob2" value="15" />
+          <entry key="iob2" value="17" />
           <entry key="pl" value="1" />
-          <entry key="py" value="13" />
-          <entry key="raw" value="5" />
-          <entry key="txt" value="56" />
+          <entry key="py" value="17" />
+          <entry key="raw" value="6" />
+          <entry key="txt" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="78" />
+          <entry key="PLAIN_TEXT" value="98" />
           <entry key="Perl" value="1" />
-          <entry key="Python" value="13" />
+          <entry key="Python" value="17" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ME_external.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="188" column="18" lean-forward="true" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1543752164130" expanded="true" signature="6618:7041" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/trainfile_path.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474342">
-              <caret line="21561" selection-start-line="21561" selection-end-line="21561" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AnalyzeFeature.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-              <folding>
-                <marker date="1543742002905" expanded="true" signature="94:400" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/featuresfile_path.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task1-1o%.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task1sort.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8272">
-              <caret line="376" column="5" selection-start-line="376" selection-start-column="5" selection-end-line="376" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task1up50.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-end-column="2559" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Genia4ERtraining/Genia4ERtask1.iob2">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4862">
-              <caret line="221" column="9" selection-start-line="221" selection-start-column="9" selection-end-line="221" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.44025558">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ME.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="273">
+                  <caret line="422" selection-start-line="421" selection-start-column="6" selection-end-line="422" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data/trainfile_path.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="468">
+                  <caret line="1500" selection-start-line="1500" selection-end-line="1500" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/v1/ME_v1.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="485">
+                  <caret line="358" selection-start-line="358" selection-end-line="358" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/v1/ME_model_for_task1_1_process.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="66">
+                  <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/v1/ME_v1.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="273">
+                  <caret line="397" column="5" lean-forward="true" selection-start-line="397" selection-start-column="5" selection-end-line="397" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#10154#10734#0" />
+                    <element signature="e#10832#12362#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -186,6 +401,7 @@
       <find>factor</find>
       <find>glucocorticoid</find>
       <find>plurality</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,17 +423,22 @@
         <option value="$PROJECT_DIR$/data/testfile_path.txt" />
         <option value="$PROJECT_DIR$/data/standard_answer_path.txt" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.iob2" />
+        <option value="$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.raw" />
+        <option value="$PROJECT_DIR$/data/modelandprocess/ME_model_for_task1_1_process.txt" />
         <option value="$PROJECT_DIR$/AnalyzeFeature.py" />
         <option value="$PROJECT_DIR$/data/trainfile_path.txt" />
         <option value="$PROJECT_DIR$/ME_external.py" />
+        <option value="$PROJECT_DIR$/ME_v1.py" />
+        <option value="$PROJECT_DIR$/v1/ME_v1.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="55" />
-    <option name="y" value="30" />
-    <option name="width" value="933" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="985" />
+    <option name="y" value="27" />
+    <option name="width" value="935" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -242,19 +463,7 @@
             <path>
               <item name="Lab3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab3" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Genia4ERtest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab3" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Genia4ERtraining" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab3" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -265,6 +474,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data/modelandprocess" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/v1" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data/modelandprocess" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -278,7 +499,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ME_external">
+  <component name="RunManager" selected="Python.ME_v1">
     <configuration name="ME_external" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Lab3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -291,7 +512,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ME_external.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ME.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ME_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Lab3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v1/ME_v1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -346,9 +588,11 @@
       <item itemvalue="Python.ME_external" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.ME_v1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ME_v1" />
         <item itemvalue="Python.ME_external" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test (1)" />
@@ -369,14 +613,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="30" width="933" height="1050" extended-state="4" />
+    <frame x="55" y="30" width="1865" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.046255507" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14945652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -398,34 +642,39 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>260</line>
+          <url>file://$PROJECT_DIR$/ME.py</url>
+          <line>327</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>351</line>
+          <url>file://$PROJECT_DIR$/ME.py</url>
+          <line>438</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>264</line>
+          <url>file://$PROJECT_DIR$/ME.py</url>
+          <line>331</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>283</line>
+          <url>file://$PROJECT_DIR$/ME.py</url>
+          <line>350</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>310</line>
+          <url>file://$PROJECT_DIR$/ME.py</url>
+          <line>381</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ME_external.py</url>
-          <line>129</line>
+          <url>file://$PROJECT_DIR$/ME.py</url>
+          <line>192</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ME.py</url>
+          <line>239</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -445,16 +694,6 @@
     <entry file="file://$PROJECT_DIR$/doc/Genia4ERtest/Genia4EReval1.iob2" />
     <entry file="file://$PROJECT_DIR$/doc/JNLPBA2004_eval/SharedTaskEval.pl" />
     <entry file="file://$PROJECT_DIR$/doc/JNLPBA2004_eval/ReadMe.txt" />
-    <entry file="file://$PROJECT_DIR$/data/test_feature_path.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/result_path.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-770">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -469,16 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/ME_model_path.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ME.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dsad.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -490,27 +719,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/testfile_path.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="5000" selection-start-line="5000" selection-end-line="5000" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.raw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="4999" column="7" selection-end-line="4999" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.iob2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="4999" column="9" selection-end-line="4999" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/standard_answer_path.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
           <caret line="5000" selection-start-line="5000" selection-end-line="5000" />
@@ -545,53 +753,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test6.txt" />
     <entry file="file://$PROJECT_DIR$/data/Genia4ERtraining/Genia4ERtask2.iob2">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="155" column="19" selection-start-line="155" selection-start-column="19" selection-end-line="155" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ME_external.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="188" column="18" lean-forward="true" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1543752164130" expanded="true" signature="6618:7041" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/trainfile_path.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474342">
-          <caret line="21561" selection-start-line="21561" selection-end-line="21561" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnalyzeFeature.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-          <folding>
-            <marker date="1543742002905" expanded="true" signature="94:400" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/featuresfile_path.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -605,26 +771,162 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/featuresfile_path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test_feature_path.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/standard_answer_path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="5000" selection-start-line="5000" selection-end-line="5000" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/result_path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/ME_model_for_task1_1备份.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timeforalltrainfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.raw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="104883" column="19" selection-start-line="104883" selection-start-column="19" selection-end-line="104883" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnalyzeFeature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+          <folding>
+            <marker date="1543808974230" expanded="true" signature="720:2435" ph="..." />
+            <marker date="1543808974230" expanded="true" signature="1313:2435" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task1nextwordup50.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-end-column="2009" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task1lastwordup50.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="78" selection-end-column="2178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task1up50.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="25" selection-end-column="2559" />
+          <caret column="21" selection-end-column="1919" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Genia4ERtraining/Genia4ERtask1.iob2">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4862">
-          <caret line="221" column="9" selection-start-line="221" selection-start-column="9" selection-end-line="221" selection-end-column="9" />
+        <state relative-caret-position="32978">
+          <caret line="1499" column="19" selection-end-line="1499" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/v1/ME_model_for_task1_1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="242">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Genia4ERtest/Genia4EReval1.iob2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="104894" selection-start-line="104894" selection-end-line="104894" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ME_model_path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ME.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="214" column="28" selection-start-line="214" selection-start-column="28" selection-end-line="214" selection-end-column="28" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/trainfile_path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="1500" selection-start-line="1500" selection-end-line="1500" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ME.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="422" selection-start-line="421" selection-start-column="6" selection-end-line="422" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/ME_model_for_task1_1_process.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/ME_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="397" column="5" lean-forward="true" selection-start-line="397" selection-start-column="5" selection-end-line="397" selection-end-column="5" />
+          <folding>
+            <element signature="e#10154#10734#0" />
+            <element signature="e#10832#12362#0" />
           </folding>
         </state>
       </provider>
