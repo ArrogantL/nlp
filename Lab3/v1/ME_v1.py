@@ -299,6 +299,7 @@ class maxEntropy(object):
             if line == '':
                 break
             if line == '\n':
+                result_file.write('\n')
                 continue
             prop = mxEnt.predict(line)
             result_file.write(line2[:-1] + ' ' + prop[0][1] + '\n')
@@ -327,8 +328,8 @@ class maxEntropy(object):
             line2 = result_file.readline()
             if line == '':
                 break
-            while line == '\n':
-                line = standard_answer_file.readline()
+            if line == '\n' and line==line2:
+                continue
             fields1 = line.strip().split()
             fields2 = line2.strip().split()
             assert fields1[0] == fields2[0]

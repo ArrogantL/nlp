@@ -27,7 +27,7 @@ class maxEntropy(object):
             self.lastw = self.w
 
     # 对于该问题，M是一个定值，所以delta有解析解
-    def train(self, max_iter=1000):
+    def train(self, max_iter=500):
         # time很小
         self.initP()  # 主要计算M以及联合分布在f上的期望
         # 下面计算条件分布及其期望，正式开始训练
@@ -92,10 +92,11 @@ class maxEntropy(object):
         return np.exp(sumP)
 
     def convergence(self):
+        sum=0
         for i in range(len(self.w)):
-            if abs(self.w[i] - self.lastw[i]) >= 0.001:
-                return False
-        return True
+            sum+=abs(self.w[i] - self.lastw[i])
+        print(' ' + str(sum / len(self.w)))
+        return sum < 0.01 * len(self.w)
 
     def predict(self, input):
         features = input.strip().split()
@@ -217,6 +218,8 @@ class maxEntropy(object):
         # 处理空行
         if len(field) == 0:
             return ''
+        if "###" in line:
+            return line[0:-1]
         # 1-gram
         word = field[0]
         s = str(len(word))
@@ -356,10 +359,11 @@ class maxEntropy(object):
             line2 = testfile.readline()
             if line == '':
                 break
-            if line == '\n':
+            if line == '\n' or "###MEDLINE" in line:
+                result_file.write(line)
                 continue
             prop = mxEnt.predict(line)
-            result_file.write(line2[:-1] + ' ' + prop[0][1] + '\n')
+            result_file.write(line2[:-1] + "\t" + prop[0][1] + '\n')
         test_feature_file.close()
         result_file.close()
 
@@ -385,10 +389,11 @@ class maxEntropy(object):
             line2 = result_file.readline()
             if line == '':
                 break
-            while line == '\n':
-                line = standard_answer_file.readline()
+            if (line=='\n' or "###MEDLINE" in line) and line==line2:
+                continue
             fields1 = line.strip().split()
             fields2 = line2.strip().split()
+            print(fields1,fields2)
             assert fields1[0] == fields2[0]
             label1 = fields1[1]
             label2 = fields2[1]
@@ -425,23 +430,22 @@ if __name__ == '__main__':
     ME_model_path = "data/ME_model_path.txt"
     # testfile_path = "data/testfile_path.txt"
     # standard_answer_path = "data/standard_answer_path.txt"
-    testfile_path = "data/Genia4ERtest/Genia4EReval1.raw"
-    standard_answer_path = "data/Genia4ERtest/Genia4EReval1.iob2"
+    testfile_path = "data/Genia4ERtest/Genia4EReval2.raw"
+    standard_answer_path = "data/Genia4ERtest/Genia4EReval2.iob2"
     test_feature_path = "data/test_feature_path.txt"
     result_path = "data/result_path.txt"
     mxEnt = maxEntropy()
-    mxEnt.get_features(trainfile_path, featuresfile_path)
-    print("finish feature")
+    # mxEnt.get_features(trainfile_path, featuresfile_path)
+    # print("finish feature")
+    #
+    # start = time.time()
+    #
+    # mxEnt.train_ME(featuresfile_path, ME_model_path)
+    # print("finish train")
+    # traintime = time.time() - start
+    # print(train    time, "s")
 
     start = time.time()
-
-    mxEnt.train_ME(featuresfile_path, ME_model_path)
-    print("finish train")
-    traintime = time.time() - start
-    print(traintime, "s")
-
-    start = time.time()
-
     mxEnt.getPredict(testfile_path, ME_model_path, test_feature_path, result_path)
     print("finish predict")
     predicttime = time.time() - start
