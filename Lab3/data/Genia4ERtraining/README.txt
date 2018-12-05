@@ -1,19 +1,9 @@
-
-
-
-
-
-
-
-
-
 These files are intended for the shared task at the International Joint Workshop on Natural Language Processing in Biomedicine and its Applications:
 
    Genia4ERtask1.iob2:	the training data 
    sampletest1.raw:	the sample test data
    sampletest1.iob2	the reference data for the sample test data
 
-	相同但具有抽象边界信息？？形如  ###MEDLINE:20452467 + 换行
    (the following 3 files are identical with the above 3 files except they have abstract boundary information)
    Genia4ERtask2.iob2:	the training data 
    sampletest2.raw:	the sample test data
