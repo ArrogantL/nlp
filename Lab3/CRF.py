@@ -2,7 +2,7 @@ import os
 import re
 import time
 from queue import Queue
-
+from CRFModel import *
 KEYWORDS = ["sequence", "BSAP", "Sp1", "terminal", "A", "binding", "CIITA", "NF", "TNFalpha", "macrophages", "Fas",
             "IL-5", "E2F", "NF-kappa", "virus", "TNF-alpha", "VDR", "2", "B", "resting", "motifs", "primary",
             "endothelial", "monocytes", "kappaB", "HIV", "cytokines", "HeLa", "3-kinase", "promoters", "proteins",
@@ -54,14 +54,14 @@ def process(line, lastlinesqueue, nextline, is_train):
         return ''
     # len key - UP has_digit . plurality word shapeF shapeT
     word = field[0]
-    s = str(len(word))
+    s = word +' '
     s += ' ' + str(word in KEYWORDS) + "Key" + word
     s += ' ' + str('-' in word) + '-'
     s += ' ' + str(word.isupper()) + "upper"
     s += ' ' + str(any(char.isdigit() for char in word)) + "has_digit"
     s += ' ' + str('.' in word) + '.'
     s += ' ' + str(word[-1] == 's') + "plurality"
-    s += ' ' + word
+    s += ' ' + str(len(word))
     s += ' shape' + get_word_shape(word, is_abbr=False) + ' abbr' + get_word_shape(word, is_abbr=True)
     # 以下代码不用更改
     # 测试
@@ -99,12 +99,14 @@ def get_features(trainfile_path, featuresfile_path, is_train=True):
 
 
 def train_ME(template_path, featuresfile_path, ME_model_path):
-    os.system("crf_learn -c 4.0 -p 8 " + template_path + " " + featuresfile_path + " " + ME_model_path)
+    crf_learn(template_path,featuresfile_path,ME_model_path,p=8)
+    # os.system("crf_learn -c 4.0 -p 8 " + template_path + " " + featuresfile_path + " " + ME_model_path)
 
 
 def getPredict(testfile_path, ME_model_path, test_feature_path, result_path):
     get_features(testfile_path, test_feature_path, is_train=False)
-    os.system("crf_test -m " + ME_model_path + " " + test_feature_path + " >> tempresult.txt")
+    crf_test(ME_model_path,test_feature_path,"tempresult.txt")
+    # os.system("crf_test -m " + ME_model_path + " " + test_feature_path + " >> tempresult.txt")
     tempfile = open("tempresult.txt", "r+")
     result_file = open(result_path, "w", encoding="GB18030")
     testfile = open(testfile_path, "r+", encoding="GB18030")
@@ -113,12 +115,11 @@ def getPredict(testfile_path, ME_model_path, test_feature_path, result_path):
         line2 = testfile.readline()
         if line == '' or line2 == '':
             break
-        if line == '\n':
-            assert line2 == '\n'
+        if line =='\n':
             result_file.write('\n')
             continue
-        assert len(line2.strip().split())==1
         result_file.write(line2.strip() + '\t' + line.strip().split()[-1] + '\n')
+    result_file.write('\n')
     tempfile.close()
     result_file.close()
     testfile.close()
@@ -133,8 +134,8 @@ def evaluate(result_path, evaluate_path,
 if __name__ == '__main__':
     # ctrl+'/'快速取消/添加'#'注释
     # 动态配置
-    # trainfile_path = "data/train.txt"
-    trainfile_path = "data/Genia4ERtraining/Genia4ERtask1.iob2"
+    trainfile_path = "data/train.txt"
+    # trainfile_path = "data/Genia4ERtraining/Genia4ERtask1.iob2"
 
     # ME_model_path = "data/CRF_model.txt"
     ME_model_path = "data/CRF_model_3.txt"

@@ -197,8 +197,8 @@ def evaluate(result_path,
 if __name__ == '__main__':
     # ctrl+'/'快速取消/添加'#'注释
     # 动态配置
-    # trainfile_path = "data/train.txt"
-    trainfile_path = "data/Genia4ERtraining/Genia4ERtask1.iob2"
+    trainfile_path = "data/train.txt"
+    # trainfile_path = "data/Genia4ERtraining/Genia4ERtask1.iob2"
 
     # testfile_path = "data/test.txt"
     # standard_answer_path = "data/standard_answer.txt"
