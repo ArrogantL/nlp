@@ -1,0 +1,23 @@
+IL-2  TrueKeyIL-2 True- Trueupper Truehas_digit False. Falseplurality 4 shapeShapeXX-d abbrShapeX-d	B-DNA
+gene  TrueKeygene False- Falseupper Falsehas_digit False. Falseplurality 4 shapeShapexxxx abbrShapex	I-DNA
+expression  FalseKeyexpression False- Falseupper Falsehas_digit False. Falseplurality 10 shapeShapexxxxxxxxxx abbrShapex	O
+and  TrueKeyand False- Falseupper Falsehas_digit False. Falseplurality 3 shapeShapexxx abbrShapex	O
+NF-kappa  TrueKeyNF-kappa True- Falseupper Falsehas_digit False. Falseplurality 8 shapeShapeXX-xxxxx abbrShapeX-x	B-protein
+B  TrueKeyB False- Trueupper Falsehas_digit False. Falseplurality 1 shapeShapeX abbrShapeX	I-protein
+activation  FalseKeyactivation False- Falseupper Falsehas_digit False. Falseplurality 10 shapeShapexxxxxxxxxx abbrShapex	O
+through  FalseKeythrough False- Falseupper Falsehas_digit False. Falseplurality 7 shapeShapexxxxxxx abbrShapex	O
+CD28  TrueKeyCD28 False- Trueupper Truehas_digit False. Falseplurality 4 shapeShapeXXdd abbrShapeXd	B-protein
+requires  FalseKeyrequires False- Falseupper Falsehas_digit False. Trueplurality 8 shapeShapexxxxxxxx abbrShapex	O
+reactive  FalseKeyreactive False- Falseupper Falsehas_digit False. Falseplurality 8 shapeShapexxxxxxxx abbrShapex	O
+oxygen  FalseKeyoxygen False- Falseupper Falsehas_digit False. Falseplurality 6 shapeShapexxxxxx abbrShapex	O
+production  FalseKeyproduction False- Falseupper Falsehas_digit False. Falseplurality 10 shapeShapexxxxxxxxxx abbrShapex	O
+by  FalseKeyby False- Falseupper Falsehas_digit False. Falseplurality 2 shapeShapexx abbrShapex	O
+5-lipoxygenase  FalseKey5-lipoxygenase True- Falseupper Truehas_digit False. Falseplurality 14 shapeShaped-xxxxxxxxxxxx abbrShaped-x	B-protein
+.  FalseKey. False- Falseupper Falsehas_digit True. Falseplurality 1 shapeShape- abbrShape-	O
+
+Activation  FalseKeyActivation False- Falseupper Falsehas_digit False. Falseplurality 10 shapeShapeXxxxxxxxxx abbrShapeXx	O
+of  TrueKeyof False- Falseupper Falsehas_digit False. Falseplurality 2 shapeShapexx abbrShapex	O
+the  FalseKeythe False- Falseupper Falsehas_digit False. Falseplurality 3 shapeShapexxx abbrShapex	O
+CD28  TrueKeyCD28 False- Trueupper Truehas_digit False. Falseplurality 4 shapeShapeXXdd abbrShapeXd	B-protein
+surface  TrueKeysurface False- Falseupper Falsehas_digit False. Falseplurality 7 shapeShapexxxxxxx abbrShapex	I-protein
+receptor  TrueKeyreceptor False- Falseupper Falsehas_digit False. Falseplurality 8 shapeShapexxxxxxxx abbrShapex	I-protein

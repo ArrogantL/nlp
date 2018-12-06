@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Lab3.iml" filepath="$PROJECT_DIR$/.idea/Lab3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../基于MaxEnt和CRF的生物医学领域NER/.idea/基于MaxEnt和CRF的生物医学领域NER.iml" filepath="$PROJECT_DIR$/../基于MaxEnt和CRF的生物医学领域NER/.idea/基于MaxEnt和CRF的生物医学领域NER.iml" />
     </modules>
   </component>
 </project>
